@@ -1,4 +1,8 @@
 @media screen and (max-width: 1600px){
+    header .logo {margin-left: 20px;}
+    header .right {
+        margin-right: 20px;
+    }
     /* ====================== shop ==================== */
     .mainPage .mainPage_wrapper .s2 .shop {
         width: calc(100% - 80px);
@@ -56,9 +60,10 @@
         display: block;
         position: relative;
         margin-right: 40px;
+        width: 25%;
     }
     .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont {
-        width: 316px;
+        width: 100%;
     }
     .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper {}
     .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product {}            
@@ -108,6 +113,9 @@
     .mainPage .mainPage_wrapper .s4 .cafe .title_more {
         width: calc(100% - 80px);
     }
+    .mainPage .mainPage_wrapper .s4 .cafe .cafe_txt {
+        margin-left: 40px;
+    }
     .mainPage .swiper-wrapper .s5 .event {
         width: calc(100% - 80px);
         margin: 50px auto;
@@ -133,6 +141,8 @@
         margin: 45px 40px 25px;
     }
     .mainPage .swiper-wrapper .s7 .journal_footer .container {width: calc(100% - 80px);}
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt {margin-left: 40px;}
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right {margin-right: 40px;}
     }
 @media screen and (max-width: 1500px){
 /* footer 조정 */
@@ -145,16 +155,28 @@
     color: #555;
 }
 }
+@media screen and (max-width: 1300px){
+    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
+        width: 95%;
+    }
+}
 @media screen and (max-width: 1200px){
     .mainPage .swiper-wrapper .s1 .mainVisual video {
         width: 140%;
     }
-    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
-        width: 60%;
-    }
     .mainPage .swiper-wrapper .s5 .event .line1 {
         display: none;
     }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-pagination .swiper-pagination-bullet {
+        width: 50px;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .place {margin-left: 60px; margin-right: 10px;}
+}
+@media screen and (max-width: 1100px){
+    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
+        width: 60%;
+    }
+    .mainPage .swiper-wrapper .s6 .picture .container .basic img {}
 }
 @media screen and (max-width: 900px){
     header nav a {
@@ -164,15 +186,95 @@
         width: 12%;
     }
     header .right a {}
-    .mainPage .swiper-wrapper .s6 .picture .container .basic {display: none;}
     .mainPage .swiper-wrapper .s1 .mainVisual video {
         width: 180%;
     }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li {
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product {
+        display: none;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop {
+        margin: 30px auto;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub {
+        width: 70%;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt .title_price h3 {
+        font-size: 1.25rem;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt .title_price .price {
+        font-family: 'YESMyoungjo-Regular';
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt .ex {
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-pagination .swiper-pagination-bullet {
+        width: 70px;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
+        width: 80%;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont h4 {
+        margin: 18px 0;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift {margin-right: 20px;}
+    .mainPage .swiper-wrapper .s6 .picture .container .basic {display: none;}
+    .mainPage .swiper-wrapper .s6 .picture .container .pic_list {width: 80%;}
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list {
+        position: absolute;
+        top: 108%;
+        display: flex;
+        flex-flow: column;
+        align-items: baseline;
+        justify-content: left;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list h3 {
+        margin-right: 0;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list p {
+        margin-top: 15px;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .place {margin-left: 20px; margin-right: 10px;}
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .time {}
+    .mainPage .mainPage_wrapper .s3 .store {margin : 30px auto;}
+}
+@media screen and (max-width: 700px){
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title {position: relative;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list {
+        position: absolute;
+        top: 170%;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub {
+        margin-top: 40px;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list {
+        top: 120%;
+    }
+    .mainPage .mainPage_wrapper .s3 .store .mapo {margin-top: 60px;}
+    .mainPage .mainPage_wrapper .s4 .cafe .cafe_txt {
+        margin-top: 60px;
+        margin-right: 0;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list h3 {
+        font-size: 1.25rem;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont h4 {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
+        width: 90%;
+    }
 }
 @media screen and (max-width: 600px){
-    header .logo {margin-left: 20px;}
     header .right {
-        margin-right: 20px;
         width: 20%;
     }
     header nav {
@@ -189,7 +291,7 @@
         width: 70%;
         margin-left: 20px;
         position: absolute;
-        top: 65%; left: 0;
+        bottom: 20%; left: 0;
     }
     .mainPage .swiper-wrapper .s1 .mobile p {
         color: #000;
@@ -201,5 +303,121 @@
         font-size: 1.75rem;
         font-weight: 600;
         color: #000;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title h2 {
+        font-size: 1.375rem; margin-right: 0;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li a {
+        font-size: 1rem;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li a span {
+        font-size: 1rem;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop {
+        width: calc(100% - 40px);
+    }
+    .mainPage .mainPage_wrapper .s3 .store .title_more {
+        width: calc(100% - 40px);
+    }
+    .mainPage .mainPage_wrapper .s4 .cafe .title_more {
+        width: calc(100% - 40px);
+    }
+    .mainPage .mainPage_wrapper .s4 .cafe .cafe_txt {
+        margin-left: 20px; margin-right: 20px;
+        line-height: 1.5;
+    }
+    .mainPage .swiper-wrapper .s5 .event {
+        width: calc(100% - 40px);
+    }
+    .mainPage .swiper-wrapper .s6 .picture {
+        width: calc(100% - 40px);
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer .title_more {
+        margin-left: 20px;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer .container{width: calc(100% - 40px);
+    }
+    .mainPage .mainPage_wrapper .s4 .cafe .cafe_txt {
+        font-size: 1rem;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
+        width: 100%;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt {margin-left: 20px;}
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right {margin-right: 20px;}
+}
+@media screen and (max-width: 500px){
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-pagination .swiper-pagination-bullet {
+        width: 50px;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub {
+        width: 80%;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt .title_price h3 {
+        font-size: 1rem;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt .title_price .price {
+        font-family: 'YESMyoungjo-Regular';
+        font-size: 0.875rem;
+        margin-top: 5px;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt .ex {
+        line-height: 1.6;
+        font-size: 0.875rem;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 470px){
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont img {
+        width: 60%;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift {
+        margin-right: 0;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont h4 {
+        font-size: 0.875rem;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont p {
+        font-size: 0.688rem;
+    }
+}
+@media screen and (max-width: 380px){
+    .mainPage .swiper-wrapper .s1 .mobile {
+        bottom : 30%; left: 0;
+    }
+    .mainPage .swiper-wrapper .s1 .mobile p {
+        font-size: 1rem;
+    }
+    .mainPage .swiper-wrapper .s1 .mobile p span {
+        font-size: 1.375rem;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list {
+        width: 240px;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li a {
+        font-size: 0.875rem;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li a span {
+        font-size: 0.875rem;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .swiper-pagination .swiper-pagination-bullet {
+        width: 50px;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont {
+        text-align: center;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont h4 {
+        font-size: 0.688rem;
+        margin: 5px auto;
+        width: max-content;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont p {
+        font-size: 0.625rem;
+        letter-spacing: -0.1rem;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont img {
+        width: 40%;
     }
 }

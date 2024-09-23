@@ -12,8 +12,8 @@ const shop = new Swiper(".sub_swiper_cont", {
     },
 })
 const store = new Swiper(".mapo .img_list", {
-    slidesPerView: 1.8, //한 화면 기준 보이는 슬라이드 개수
-    spaceBetween: 20, //슬라이드 사이 간격
+    slidesPerView: 1, //한 화면 기준 보이는 슬라이드 개수
+    spaceBetween: 0, //슬라이드 사이 간격
     autoplay : {delay:5000},
     navigation:{
         prevEl : '.store .mapo .swiper-button-prev',
@@ -26,25 +26,41 @@ const store = new Swiper(".mapo .img_list", {
     loop: true,
     loopedSlides: 2,
     breakpoints: {
+        900: {
+            slidesPerView: 1.2,
+            spaceBetween: 40
+        },
+        1000: {
+            slidesPerView: 1.4,
+            spaceBetween: 20
+        },
+        1200: {
+            slidesPerView: 1.6,
+            spaceBetween: 20
+        },
         1300: {
+            slidesPerView: 1.8,
+            spaceBetween: 20
+        },
+        1600: {
             slidesPerView: 2,
             spaceBetween: 20
         },
     }
 })
 const cafe = new Swiper(".cafe .img_list", {
-    slidesPerView: 3, //한 화면 기준 보이는 슬라이드 개수
+    slidesPerView: 2, //한 화면 기준 보이는 슬라이드 개수
     spaceBetween: 0, //슬라이드 사이 간격
     autoplay : {delay:3000},
     loop : true,
-    navigation:{
-        prevEl : '.store .mapo .swiper-button-prev',
-        nextEl : '.store .mapo .swiper-button-next',
-    },
     pagination: {
-        el: '.store .mapo .swiper-pagination',
+        el: '.cafe .seogyo .swiper-pagination',
     },
     breakpoints: {
+        900: {
+            slidesPerView: 3,
+            spaceBetween: 0
+        },
         1300: {
             slidesPerView: 4,
             spaceBetween: 0
@@ -64,7 +80,7 @@ const event = new Swiper(".event .event_list", {
         el: '.event .event_list .swiper-pagination',
     },
     breakpoints: {
-        1200: {
+        1100: {
             slidesPerView: 2,
             spaceBetween: 0
         },
@@ -75,24 +91,26 @@ const event = new Swiper(".event .event_list", {
     }
 })
 const picture = new Swiper(".pic_list", {
-    direction : 'vertical',
     slidesPerView: 2,
     spaceBetween: 20,
     breakpoints: {
         900: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            direction : 'horizontal'
+            slidesPerView: 2.2,
+            spaceBetween: 20
         },
-        1100: {
+        1000: {
             slidesPerView: 2.4,
             spaceBetween: 20
         },
-        1250: {
+        1100: {
+            slidesPerView: 2.6,
+            spaceBetween: 20
+        },
+        1200: {
             slidesPerView: 2.8,
             spaceBetween: 20
         },
-        1380: {
+        1300: {
             slidesPerView: 3.2,
             spaceBetween: 20
         },
@@ -100,7 +118,7 @@ const picture = new Swiper(".pic_list", {
             slidesPerView: 3.4,
             spaceBetween: 20
         },
-        1700: {
+        1680: {
             slidesPerView: 3.6,
             spaceBetween: 20
         },
