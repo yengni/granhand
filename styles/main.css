@@ -1,189 +1,467 @@
-/* =================공통=================== */
-.swiper {height: 100vh; width: 100%;}
-.swiper .swiper-wrapper {}
-.swiper .swiper-wrapper .swiper-slide {height: 100vh;}
-.main .swiper-wrapper .swiper-slide .contents {}
-.main .swiper-wrapper .swiper-slide .contents .title_more {}
-.main .swiper-wrapper .swiper-slide .contents .title_more .title {}
-.main .swiper-wrapper .swiper-slide .contents .title_more .title h2 {}
+/* ===========================공통============================== */
+.mainPage {height: 100vh;}
+.mainPage .swiper-wrapper {}
+.mainPage .mainPage_wrapper .mainPage_slide {height: 100vh; overflow: hidden;}
+.mainPage .mainPage_wrapper .mainPage_slide .contents {}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 25px;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title {display: flex; align-items: end;}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title h2 {
+    font-size: 1.75rem;
+    font-family: 'YESMyoungjo-Regular';
+    font-weight: 600;
+    margin-right: 20px;
+}
 /* ============== list ============== */
-.main .swiper-wrapper .swiper-slide .contents .title_more .title .list {}
-.main .swiper-wrapper .swiper-slide .contents .title_more .title .list li {}
-.main .swiper-wrapper .swiper-slide .contents .title_more .title .list li span {}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list {
+    display: flex;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li {
+    margin-right: 36px;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li:hover a {
+    color: #EBDCCA;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li:last-child {margin-right: 0;}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li a {
+    font-family: 'YESMyoungjo-Regular';
+    font-size: 1.125rem;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li span {
+    font-size: 1.125rem;
+    display: inline-block;
+    font-family: 'YESMyoungjo-Regular';
+    background-color: #EBDCCA;
+    border-radius: 8px;
+    height: 0.8rem;/*  */
+}
 /* ============== more ============== */
-.main .swiper-wrapper .swiper-slide .contents .title_more .more {}
-.main .swiper-wrapper .swiper-slide .contents .title_more .more a {}
-.main .swiper-wrapper .swiper-slide .contents .container {}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .more {}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .more a {
+    font-size: 0.875rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .more a:hover {
+    border-bottom: 1px solid;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container {position: relative;}
 /* ============== 매장 정보 ============== */
-.main .swiper-wrapper .swiper-slide .contents .container .list {}
-.main .swiper-wrapper .swiper-slide .contents .container .list h3 {}
-.main .swiper-wrapper .swiper-slide .contents .container .list p {}
-.main .swiper-wrapper .swiper-slide .contents .container .list .place {}
-.main .swiper-wrapper .swiper-slide .contents .container .list .time {}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .list {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .list h3 {
+    font-size: 1.5rem;
+    font-family: 'YESMyoungjo-Regular';
+    font-weight: 600;
+    margin-right: 15px;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .list p {
+    font-size: 0.875rem;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .place {margin-left: 120px; margin-right: 10px;}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .time {}
 /* ============== 매장 사진 ============== */
-.main .swiper-wrapper .swiper-slide .contents .container .img_list {}
-.main .swiper-wrapper .swiper-slide .contents .container .img_list {}
-.main .swiper-wrapper .swiper-slide .contents .container .img_list > div {}
-.main .swiper-wrapper .swiper-slide .contents .container .img_list > div img {}
-/* ==================개별================== */
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .img_list {}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .img_list {}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .img_list > div {}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .img_list > div img {}
+/*  */
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .swiper-button-prev {
+    color: #333;
+    top: 50%; left: 10%;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .swiper-button-next {
+    color: #333; 
+    top: 50%; right: 10%;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .swiper-pagination {
+    bottom: -20px;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .swiper-pagination .swiper-pagination-bullet {
+    border-radius: 0; margin: 0; width: 60px; height: 3px;
+    transition: all 0.3s;
+}
+.mainPage .mainPage_wrapper .mainPage_slide .contents .container .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #d7c2a9;
+}
+/* ============================개별================================ */
 /* ====================== shop ==================== */
-.main .swiper-wrapper .s2 {}
-.main .swiper-wrapper .s2 .hd_copy {}
-.main .swiper-wrapper .s2 header {}
-.main .swiper-wrapper .s2 header .logo {}
-.main .swiper-wrapper .s2 header .logo img {}
-.main .swiper-wrapper .s2 header nav {}
-.main .swiper-wrapper .s2 header nav a {}
-.main .swiper-wrapper .s2 header .right {}
-.main .swiper-wrapper .s2 header .right a {}
-.main .swiper-wrapper .s2 header .right a img {}
-.main .swiper-wrapper .s2 .shop .title_more {}
-.main .swiper-wrapper .s2 .shop .title_more .title {}
-.main .swiper-wrapper .s2 .shop .title_more .title h2 {}
-.main .swiper-wrapper .s2 .shop .title_more .title .list {}
-.main .swiper-wrapper .s2 .shop .title_more .title .list li {}
-.main .swiper-wrapper .s2 .shop .title_more .title .list li a {}
-.main .swiper-wrapper .s2 .shop .title_more .title .list li a span {}
-.main .swiper-wrapper .s2 .shop .title_more .more {}
-.main .swiper-wrapper .s2 .shop .title_more .more a {}
-.main .swiper-wrapper .s2 .shop .perfume {}
-/* =============== 공통 product ================ */
-.main .swiper-wrapper .s2 .shop .perfume .product {}
+.mainPage .mainPage_wrapper .s2 .shop {
+    width: calc(100% - 240px);
+    margin: 70px auto;
+}
+.mainPage .mainPage_wrapper .s2 .shop .title_more {}
+.mainPage .mainPage_wrapper .s2 .shop .title_more .title {}
+.mainPage .mainPage_wrapper .s2 .shop .title_more .title h2 {}
+.mainPage .mainPage_wrapper .s2 .shop .title_more .title .list {}
+.mainPage .mainPage_wrapper .s2 .shop .title_more .title .list li {}
+.mainPage .mainPage_wrapper .s2 .shop .title_more .title .list li a {}
+.mainPage .mainPage_wrapper .s2 .shop .title_more .title .list li a span {}
+.mainPage .mainPage_wrapper .s2 .shop .title_more .more {}
+.mainPage .mainPage_wrapper .s2 .shop .title_more .more a {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* =============== 메인 product ================ */
-.main .swiper-wrapper .s2 .shop .perfume .main_product {}
-.main .swiper-wrapper .s2 .shop .perfume .main_product .photo {}
-.main .swiper-wrapper .s2 .shop .perfume .main_product .photo img {}
-.main .swiper-wrapper .s2 .shop .perfume .main_product .photo img .shop_txt  {}
-.main .swiper-wrapper .s2 .shop .perfume .main_product .photo img .shop_txt h3 {}
-.main .swiper-wrapper .s2 .shop .perfume .main_product .photo img .shop_txt p {}
-.main .swiper-wrapper .s2 .shop .perfume .main_product .photo img .shop_txt .price {}
-.main .swiper-wrapper .s2 .shop .perfume .main_product .photo img .shop_txt .ex {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product {
+    position: relative;
+    margin-right: 20px;
+    display: inline-block;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .photo {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .photo img {width: 100%;}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt {
+    position: absolute;
+    bottom: -5px; left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: all 0.3s;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product:hover .shop_txt {
+    bottom: 0px; left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt .title_price {
+    display: flex;
+    justify-content: space-between;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt .title_price h3 {
+    color: #222;
+    font-size: 1.5rem;
+    font-family: 'YESMyoungjo-Regular';
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt .title_price .price {
+    color: #222;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt .ex {
+    color: #eee;
+    margin-top: 20px;
+    line-height: 1.5;
+    overflow: hidden;
+    height: 75px;
+    font-weight: 200;
+    display: none;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product:hover .shop_txt h3 {
+    color: #eee;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product:hover .shop_txt .price {
+    color: #eee;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product:hover .shop_txt .ex {
+    display: block;
+}
 /* ================ 서브 product ================== */
-.main .swiper-wrapper .s2 .shop .perfume .sub_product {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .swiper-slide {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .s1 {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .s2 {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .s3 {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .s4 {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .swiper-slide .photo {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .swiper-slide .photo img {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .swiper-slide .shop_txt {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .swiper-slide .shop_txt h3 {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .swiper-slide .shop_txt p {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .swiper-slide .shop_txt .price {}
-.main .swiper-wrapper .s2 .shop .perfume .sub_product .swiper-wrapper .swiper-slide .shop_txt .ex {}
-/* ====================== store ==================== */
-.main .swiper-wrapper .s3 {}
-.main .swiper-wrapper .s3 .hd_copy {}
-.main .swiper-wrapper .s3 .store {}
-.main .swiper-wrapper .s3 .store .title_more {}
-.main .swiper-wrapper .s3 .store .title_more .title {}
-.main .swiper-wrapper .s3 .store .title_more .title h2 {}
-.main .swiper-wrapper .s3 .store .title_more .title .list {}
-.main .swiper-wrapper .s3 .store .title_more .title .list .li {}
-.main .swiper-wrapper .s3 .store .title_more .title .list .li a {}
-.main .swiper-wrapper .s3 .store .title_more .title .list .li a span {}
-.main .swiper-wrapper .s3 .store .title_more .more {}
-.main .swiper-wrapper .s3 .store .title_more .more a {}
-.main .swiper-wrapper .s3 .store .mapo {}
-.main .swiper-wrapper .s3 .store .mapo .store_list {}
-.main .swiper-wrapper .s3 .store .mapo .store_list h3 {}
-.main .swiper-wrapper .s3 .store .mapo .store_list p {}
-.main .swiper-wrapper .s3 .store .mapo .store_list .place {}
-.main .swiper-wrapper .s3 .store .mapo .store_list .time {}
-.main .swiper-wrapper .s3 .store .mapo .img_list {}
-.main .swiper-wrapper .s3 .store .mapo .img_list .mapo_img {}
-.main .swiper-wrapper .s3 .store .mapo .img_list .mapo_img img {}
-/* ====================== cafe ==================== */
-.main .swiper-wrapper .s4 {}
-.main .swiper-wrapper .s4 .hd_copy {}
-.main .swiper-wrapper .s4 .cafe  {}
-.main .swiper-wrapper .s4 .cafe .title_more {}
-.main .swiper-wrapper .s4 .cafe .title_more .title {}
-.main .swiper-wrapper .s4 .cafe .title_more .title h2 {}
-.main .swiper-wrapper .s4 .cafe .title_more .title .list {}
-.main .swiper-wrapper .s4 .cafe .title_more .title .list li {}
-.main .swiper-wrapper .s4 .cafe .title_more .title .list li a {}
-.main .swiper-wrapper .s4 .cafe .title_more .title .list li a span {}
-.main .swiper-wrapper .s4 .cafe .title_more .title p {}
-.main .swiper-wrapper .s4 .cafe .title_more .more {}
-.main .swiper-wrapper .s4 .cafe .title_more .more a {}
-.main .swiper-wrapper .s4 .cafe .seogyo {}
-.main .swiper-wrapper .s4 .cafe .seogyo .cafe_list {}
-.main .swiper-wrapper .s4 .cafe .seogyo .cafe_list h3 {}
-.main .swiper-wrapper .s4 .cafe .seogyo .cafe_list p {}
-.main .swiper-wrapper .s4 .cafe .seogyo .cafe_list .place {}
-.main .swiper-wrapper .s4 .cafe .seogyo .cafe_list .time {}
-.main .swiper-wrapper .s4 .cafe .seogyo .img_list {}
-.main .swiper-wrapper .s4 .cafe .seogyo .img_list .seogyo_img {}
-.main .swiper-wrapper .s4 .cafe .seogyo .img_list .seogyo_img img {}
-/* ====================== event ==================== */
-.main .swiper-wrapper .s5 {}
-.main .swiper-wrapper .s5 .hd_copy {}
-.main .swiper-wrapper .s5 .event {}
-.main .swiper-wrapper .s5 .event .title_more {}
-.main .swiper-wrapper .s5 .event .title_more .title {}
-.main .swiper-wrapper .s5 .event .title_more .title h2 {}
-.main .swiper-wrapper .s5 .event .event_list {}
+/* 서브 desktop */
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub {
+    width: 640px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product {
+    width: calc((100% - 20px) / 2);
+    position: relative;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product:nth-child(1), .mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product:nth-child(2) {
+    margin-bottom: 18px;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product .photo {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product .photo img {width: 100%;}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product .shop_txt {
+    position: absolute; top: 0; left: 0;
+    padding: 10px 10px 0 10px;
+    transition: all 0.3s;
+    width: 100%; height: 100%;
+    opacity: 0;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product .shop_txt .ex {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: transparent;
+    height: 83%;
+    overflow: hidden;
+    font-weight: 200;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product .shop_txt .title_price {
+    text-align: right;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product .shop_txt .title_price h3 {
+    font-family: 'YESMyoungjo-Regular';
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product .shop_txt .title_price .price {
+    font-family: 'YESMyoungjo-Regular';
+    margin-top: 5px;
+}
+/*======= sub_product hover =========*/
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product:hover .shop_txt {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product:hover .shop_txt .ex {
+    color: #eee;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product:hover .shop_txt .title_price h3 {
+    color: #eee;
+}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product:hover .shop_txt .title_price .price {
+    color: #eee;
+}
+/* sub tablet */
+.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub {display: none;}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo img {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo .shop_txt {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo .shop_txt .ex {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo .shop_txt .title_price {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo .shop_txt .title_price h3 {}
+.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo .shop_txt .title_price .price {}
+/* ====================== 3page store ==================== */
+.mainPage .mainPage_wrapper .s3 {}
+.mainPage .mainPage_wrapper .s3 .store {margin : 70px auto;}
+.mainPage .mainPage_wrapper .s3 .store .title_more {
+    width: calc(100% - 240px);
+    margin: 0 auto;
+}
+.mainPage .mainPage_wrapper .s3 .store .title_more .title {}
+.mainPage .mainPage_wrapper .s3 .store .title_more .title h2 {}
+.mainPage .mainPage_wrapper .s3 .store .title_more .title .list {}
+.mainPage .mainPage_wrapper .s3 .store .title_more .title .list li {}
+.mainPage .mainPage_wrapper .s3 .store .title_more .title .list li a {}
+.mainPage .mainPage_wrapper .s3 .store .title_more .title .list li a span {}
+.mainPage .mainPage_wrapper .s3 .store .title_more .more {}
+.mainPage .mainPage_wrapper .s3 .store .title_more .more a {}
+.mainPage .mainPage_wrapper .s3 .store .mapo {margin-top: 40px;}
+.mainPage .mainPage_wrapper .s3 .store .mapo .store_list {}
+.mainPage .mainPage_wrapper .s3 .store .mapo .store_list h3 {}
+.mainPage .mainPage_wrapper .s3 .store .mapo .store_list p {}
+.mainPage .mainPage_wrapper .s3 .store .mapo .store_list .place {}
+.mainPage .mainPage_wrapper .s3 .store .mapo .store_list .time {}
+.mainPage .mainPage_wrapper .s3 .store .mapo .img_list {margin: 40px 0 0;}
+.mainPage .mainPage_wrapper .s3 .store .mapo .img_list .swiper-wrapper {}
+.mainPage .mainPage_wrapper .s3 .store .mapo .img_list .swiper-wrapper .mapo_img {}
+.mainPage .mainPage_wrapper .s3 .store .mapo .img_list .swiper-wrapper .mapo_img img {width: 100%;}
+/* ====================== 4page cafe ==================== */
+.mainPage .mainPage_wrapper .s4 {}
+.mainPage .mainPage_wrapper .s4 .cafe {margin: 50px 0;}
+.mainPage .mainPage_wrapper .s4 .cafe .title_more {
+    width: calc(100% - 240px);
+    margin: 0 auto;
+}
+.mainPage .mainPage_wrapper .s4 .cafe .title_more .title {}
+.mainPage .mainPage_wrapper .s4 .cafe .title_more .title h2 {}
+.mainPage .mainPage_wrapper .s4 .cafe .title_more .title .list {}
+.mainPage .mainPage_wrapper .s4 .cafe .title_more .title .list li {}
+.mainPage .mainPage_wrapper .s4 .cafe .title_more .title .list li a {}
+.mainPage .mainPage_wrapper .s4 .cafe .title_more .title .list li a span {}
+.mainPage .mainPage_wrapper .s4 .cafe .cafe_txt {
+    font-size: 1.125rem;
+    margin: 20px 120px 40px;
+    font-family: 'YESMyoungjo-Regular';
+}
+.mainPage .swiper-wrapper .s4 .cafe .title_more .more {}
+.mainPage .swiper-wrapper .s4 .cafe .title_more .more a {}
+.mainPage .swiper-wrapper .s4 .cafe .seogyo {}
+.mainPage .swiper-wrapper .s4 .cafe .seogyo .cafe_list {}
+.mainPage .swiper-wrapper .s4 .cafe .seogyo .cafe_list h3 {}
+.mainPage .swiper-wrapper .s4 .cafe .seogyo .cafe_list p {}
+.mainPage .swiper-wrapper .s4 .cafe .seogyo .cafe_list .place {}
+.mainPage .swiper-wrapper .s4 .cafe .seogyo .cafe_list .time {}
+.mainPage .swiper-wrapper .s4 .cafe .seogyo .img_list {
+    margin-top: 40px;
+}
+.mainPage .swiper-wrapper .s4 .cafe .seogyo .img_list .seogyo_img {}
+.mainPage .swiper-wrapper .s4 .cafe .seogyo .img_list .seogyo_img img {width: 100%;}
+/* ====================== 5page event ==================== */
+.mainPage .swiper-wrapper .s5 {}
+.mainPage .swiper-wrapper .s5 .event {
+    width: calc(100% - 240px);
+    margin: 50px auto;
+    position: relative;
+}
+.mainPage .swiper-wrapper .s5 .event .title_more {}
+.mainPage .swiper-wrapper .s5 .event .title_more .title {}
+.mainPage .swiper-wrapper .s5 .event .title_more .title h2 {}
+.mainPage .swiper-wrapper .s5 .event .event_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainPage .swiper-wrapper .s5 .event .line {
+    width: 1px; height: 60%;
+    background-color: #D9D6CB;
+    position: absolute;
+}
+.mainPage .swiper-wrapper .s5 .event .line1 {
+    top: 50%; left: 33.3%; transform: translateY(-50%);
+}
+.mainPage .swiper-wrapper .s5 .event .line2 {
+    top: 50%; left: 66.6%; transform: translateY(-50%);
+}
 /* ====================== 공통 bn ====================== */
-.main .swiper-wrapper .s5 .event .event_list .bn {}
-.main .swiper-wrapper .s5 .event .event_list .bn .bn_title {}
-.main .swiper-wrapper .s5 .event .event_list .bn .bn_title h3 {}
-.main .swiper-wrapper .s5 .event .event_list .bn .bn_title p {}
-.main .swiper-wrapper .s5 .event .event_list .bn .bn_eventin {}
-.main .swiper-wrapper .s5 .event .event_list .bn a {}
+.mainPage .swiper-wrapper .s5 .event .event_list {
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .bn {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% / 3);
+    padding: 0 50px;
+    transition: all 0.2s;
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .bn .bn_title {text-align: center;}
+.mainPage .swiper-wrapper .s5 .event .event_list .bn .bn_title h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .bn .bn_title p {
+    font-size: 1.25rem;
+    margin: 10px 0 45px;
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .bn .bn_eventin {margin: 0 auto;}
+.mainPage .swiper-wrapper .s5 .event .event_list .bn .click {
+    margin: 50px auto 0;
+    border-top: 2px solid #aaa;
+    border-bottom: 2px solid #aaa;
+    height: 45px; width: 220px;
+    transition: all 0.3s;
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .bn .click > p {
+    line-height: 41px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .bn:hover {
+    opacity: 0.7;
+}
 /* ====================== 개별 bn ===================== */
-.main .swiper-wrapper .s5 .event .event_list .event1 {}
-.main .swiper-wrapper .s5 .event .event_list .event1 .bn_title {}
-.main .swiper-wrapper .s5 .event .event_list .event1 .bn_title h3 {}
-.main .swiper-wrapper .s5 .event .event_list .event1 .bn_title p {}
-.main .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin {}
-.main .swiper-wrapper .s5 .event .event_list .event1 a {}
-.main .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free {}
-.main .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free img {}
-.main .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free h4 {}
-.main .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free p {}
-.main .swiper-wrapper .s5 .event .event_list .event2 {}
-.main .swiper-wrapper .s5 .event .event_list .event2 .bn_title {}
-.main .swiper-wrapper .s5 .event .event_list .event2 .bn_title h3 {}
-.main .swiper-wrapper .s5 .event .event_list .event2 .bn_title p {}
-.main .swiper-wrapper .s5 .event .event_list .event2 .bn_eventin {}
-.main .swiper-wrapper .s5 .event .event_list .event2 .bn_eventin img {}
-.main .swiper-wrapper .s5 .event .event_list .event3 {}
-.main .swiper-wrapper .s5 .event .event_list .event3 .a {}
-.main .swiper-wrapper .s5 .event .event_list .event3 .bn_title {}
-.main .swiper-wrapper .s5 .event .event_list .event3 .bn_title h3 {}
-.main .swiper-wrapper .s5 .event .event_list .event3 .bn_title p {}
-.main .swiper-wrapper .s5 .event .event_list .event3 .bn_eventin {}
-.main .swiper-wrapper .s5 .event .event_list .event3 .bn_eventin img {}
-.main .swiper-wrapper .s5 .event .event_list .event3 .a {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_title {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_title h3 {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_title p {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin {
+    position: relative;
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin > img {
+    width: 100%;
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free {
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: end;
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift {margin-right: 30px;}
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont img {width: 100%;}/*  */
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 22px 0;
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+.mainPage .swiper-wrapper .s5 .event .event_list .event2 {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event2 .bn_title {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event2 .bn_title h3 {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event2 .bn_title p {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event2 .bn_eventin {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event2 .bn_eventin img {width: 100%}/*  */
+.mainPage .swiper-wrapper .s5 .event .event_list .event3 {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event3 .a {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event3 .bn_title {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event3 .bn_title h3 {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event3 .bn_title p {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event3 .bn_eventin {}
+.mainPage .swiper-wrapper .s5 .event .event_list .event3 .bn_eventin img {width: 100%}/*  */
+.mainPage .swiper-wrapper .s5 .event .event_list .event3 .a {}
 /* ======================= picture ======================== */
-.main .swiper-wrapper .s6 {}
-.main .swiper-wrapper .s6 .hd_copy {}
-.main .swiper-wrapper .s6 .picture {}
-.main .swiper-wrapper .s6 .picture .title_more {}
-.main .swiper-wrapper .s6 .picture .title_more .title {}
-.main .swiper-wrapper .s6 .picture .title_more .title h2 {}
-.main .swiper-wrapper .s6 .picture .basic {}
-.main .swiper-wrapper .s6 .picture .basic img {}
+.mainPage .swiper-wrapper .s6 {}
+.mainPage .swiper-wrapper .s6 .picture {
+    width: calc(100% - 240px);
+    margin: 45px auto;
+}
+.mainPage .swiper-wrapper .s6 .picture .title_more {}
+.mainPage .swiper-wrapper .s6 .picture .title_more .title {}
+.mainPage .swiper-wrapper .s6 .picture .title_more .title h2 {}
+.mainPage .swiper-wrapper .s6 .picture .container {
+    display: flex;
+}
+.mainPage .swiper-wrapper .s6 .picture .container .basic {margin-right: 20px;}
+.mainPage .swiper-wrapper .s6 .picture .container .basic img {}
 /* ============== swiper picture ============= */
-.main .swiper-wrapper .s6 .picture .swiper {}
-.main .swiper-wrapper .s6 .picture .swiper .swiper-wrapper {}
-.main .swiper-wrapper .s6 .picture .swiper .swiper-wrapper .swiper-slide {}
-.main .swiper-wrapper .s6 .picture .swiper .swiper-wrapper .swiper-slide a {}
-.main .swiper-wrapper .s6 .picture .swiper .swiper-wrapper .swiper-slide a img {}
-.main .swiper-wrapper .s6 .picture .swiper .swiper-wrapper .swiper-slide a h3 {}
-.main .swiper-wrapper .s6 .picture .swiper .swiper-wrapper .swiper-slide a p {}
+.mainPage .swiper-wrapper .s6 .picture .container .pic_list {}
+.mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper {}
+.mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide {}
+.mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont {transition: all 0.2s;}
+.mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont:hover {opacity: 0.7;}
+.mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont img {width: 100%;}
+.mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt {
+    display: flex;
+    margin-top: 8px; margin-bottom: 25px;
+    justify-content: space-between;
+}
+.mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt h3 {
+    font-size: 1.125rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt p {
+    font-size: 0.875rem;
+    width: 60%;
+    text-align: right;
+}
 /* ======================= journal ======================== */
-.main .swiper-wrapper .s7 {}
-.main .swiper-wrapper .s7 {}
-.main .swiper-wrapper .s7 .hd_copy {}
-.main .swiper-wrapper .s7 .journal {}
-.main .swiper-wrapper .s7 .journal .title_more {}
-.main .swiper-wrapper .s7 .journal .title_more .title {}
-.main .swiper-wrapper .s7 .journal .title_more .title h2 {}
-/* =========== swiper journal */
-.main .swiper-wrapper .s7 .journal .swiper {}
-.main .swiper-wrapper .s7 .journal .swiper .swiper-wrapper {}
-.main .swiper-wrapper .s7 .journal .swiper .swiper-wrapper .swiper-slide {}
+.mainPage .swiper-wrapper .s7 {}
+.mainPage .swiper-wrapper .s7 {}
+.mainPage .swiper-wrapper .s7 .hd_copy {}
+.mainPage .swiper-wrapper .s7 .journal_footer {}
+.mainPage .swiper-wrapper .s7 .journal_footer .title_more {
+    margin: 45px 120px 25px;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer .title_more .title {}
+.mainPage .swiper-wrapper .s7 .journal_footer .title_more .title h2 {}
+/* =========== swiper journal ========== */
+.mainPage .swiper-wrapper .s7 .journal_footer .container {width: calc(100% - 240px);}
+.mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper {}
+.mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide {
+    height: 100%;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide .jour_cont {transition: all 0.2s;}
+.mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide .jour_cont:hover {
+    opacity: 0.7;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide .jour_cont img {width: 100%;}
+.mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide .jour_cont .jour_txt {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide .jour_cont .jour_txt h3 {
+    font-size: 1.125rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide .jour_cont .jour_txt p {
+    font-size: 0.875rem;
+    width: 50%;
+    text-align: right;
+}

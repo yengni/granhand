@@ -18,6 +18,7 @@ figure,figcaption,sup,sub,em,strong,span,i,del,s,a,code,mark{
     font-size: 1.0em; font-weight: 400; font-style: normal;
     color: #333;
     list-style: none;
+    letter-spacing: -0.02rem;
     font-family: "Noto Sans KR", sans-serif, 'YESMyoungjo-Regular'; /* 공백이 있을 땐 큰따옴표로 가져옴 */
 }
 a{text-decoration: none;}

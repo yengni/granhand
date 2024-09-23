@@ -5,58 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>그랑핸드</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
     <!-- style -->
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="styles/slick.css">
-    <link rel="stylesheet" href="styles/slick-theme.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <!-- js -->
-    <script src="scripts/jquery-3.7.1.min.js" defer></script>
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="scripts/slick.js" defer></script>
-    <script src="scripts/common.js" defer></script>
+    <script src="scripts/jquery-3.7.1.min.js" defer></script>
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/common.js" defer></script>
 </head>
 <body>
-    <div class="swiper main">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide s1">
-                <header>
-                    <h1 class="logo"><img src="img/logo.png" alt="GRANHAND"></h1>
-                    <nav>
-                        <a href="#">Shop</a>
-                        <a href="#">Store</a>
-                        <a href="#">Cafe</a>
-                        <a href="#">Picture</a>
-                        <a href="#">Journal</a>
-                    </nav>
-                    <div class="right"> 
-                        <a href="#"><img src="img/icon_mypage.png" alt="마이페이지"></a>
-                        <a href="#"><img src="img/icon_basket.png" alt="장바구니"></a>
-                        <a href="#"><img src="img/icon_search.png" alt="검색"></a>
-                    </div>
-                    <div class="mobile">
-                        <span>그랑핸드</span>
-                        <p>는 향의 가치를 믿으며, 이를 매개로 한 끊임없는 시도를 통해 향의 일상화를 꿈꿉니다.<br>보이지 않는 곳에서 뚜렷한 존재감으로 모든 사람들에게 우리의 마음과 온기를 전하고 싶습니다.</p>
-                    </div>
-                </header>
-                <div class="mainVisual"><video src="img/mainVisual.mp4"></video></div>
+    <header>
+        <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="GRANHAND"></a></h1>
+        <nav>
+            <a href="#">Shop</a>
+            <a href="#">Store</a>
+            <a href="#">Cafe</a>
+            <a href="#">Picture</a>
+            <a href="#">Journal</a>
+        </nav>
+        <div class="right"> 
+            <a href="#"><img src="img/icon_mypage.png" alt="마이페이지"></a>
+            <a href="#"><img src="img/icon_basket.png" alt="장바구니"></a>
+            <a href="#"><img src="img/icon_search.png" alt="검색"></a>
+        </div>
+    </header>
+    <div class="swiper mainPage">
+        <div class="swiper-wrapper mainPage_wrapper">
+            <div class="swiper-slide mainPage_slide s1">
+                <div class="mainVisual"><video src="img/mainVisual.mp4" autoplay loop muted></video></div>
+                <div class="mobile">
+                    <p><span>그랑핸드</span>는 향의 가치를 믿으며, 이를 매개로 한 끊임없는 시도를 통해 향의 일상화를 꿈꿉니다.<br>보이지 않는 곳에서 뚜렷한 존재감으로 모든 사람들에게 우리의 마음과 온기를 전하고 싶습니다.</p>
+                </div>
             </div>
             <!-- 1page 끝 -->
-            <div class="swiper-slide s2">
-                <div class="hd_copy">
-                    <!-- header 복제 위치 -->
-                </div>
+            <div class="swiper-slide mainPage_slide s2">
                 <section class="contents shop">
                     <div class="title_more">
                         <div class="title">
@@ -75,67 +66,136 @@
                         </div>
                     </div>
                     <div class="container perfume">
-                        <div class="main_product product">
+                        <!-- 메인제품 -->
+                        <a href="#" class="main_product">
                             <div class="photo"><img src="img/perfume1.png" alt="Sopni Signature Perfume"></div>
                             <div class="shop_txt">
-                                <h3>Sopni Signature Perfume</h3>
-                                <p class="price">110,000 KRW</p>
+                                <div class="title_price">
+                                    <h3>Sopni Signature Perfume</h3>
+                                    <p class="price">110,000 KRW</p>
+                                </div>
                                 <p class="ex">자다 깨 나온 거실에는 느릿하게 점멸하는 트리 아래 나 때문에 잠이 깬 토토가 부스스한 눈으로 나를 올려다본다. 카펫에 자리를 잡고 눕자 내 품 안에 들어와 털썩 쓰러진다. 복슬복슬한 털을 쓰다듬는다. 불 꺼진 벽난로에서는 이따금 틱틱거리는 소리가 난다. 눈을 감고 소리에 집중하다 배 위에 멈춘 손에서 작은 움직임이 느껴진다.</p>
                             </div>
-                        </div>
-                        <!-- 서브제품 슬라이더 -->
-                        <div class="swiper product sub_product">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide s1">
-                                    <div class="photo">
-                                        <img src="img/perfume2.png" alt="Cask Signature Perfume">
-                                    </div>
-                                    <div class="shop_txt">
+                        </a>
+                        <!-- 서브제품 데스크탑 -->
+                        <div class="desktop_sub">
+                            <a href="#" class="sub_product">
+                                <div class="photo">
+                                    <img src="img/perfume2.png" alt="Cask Signature Perfume">
+                                </div>
+                                <div class="shop_txt">
+                                    <p class="ex">모임의 분위기가 무르익을 때쯤 자리를 피해 복도에서 담배를 태운다. 빈방을 찾아 가죽 소파에 파묻히듯 앉는다. 눈을 뜨니 테이블 맞은편에 누군가 앉아있다. 그녀는 무표정한 얼굴로 말없이 잔을 건넸고 나는 한 번에 들이킨다. 목이 타들어 가는 느낌에 두 눈을 질끈 감는다. 다시 눈을 뜨니 아침. 대놓고 비웃던 그녀의 낮은 웃음소리는 꽤 근사했다.</p>
+                                    <div class="title_price">
                                         <h3>Cask Signature Perfume</h3>
                                         <p class="price">110,000 KRW</p>
-                                        <p class="ex">모임의 분위기가 무르익을 때쯤 자리를 피해 복도에서 담배를 태운다. 빈방을 찾아 가죽 소파에 파묻히듯 앉는다. 눈을 뜨니 테이블 맞은편에 누군가 앉아있다. 그녀는 무표정한 얼굴로 말없이 잔을 건넸고 나는 한 번에 들이킨다. 목이 타들어 가는 느낌에 두 눈을 질끈 감는다. 다시 눈을 뜨니 아침. 대놓고 비웃던 그녀의 낮은 웃음소리는 꽤 근사했다.</p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide s2">
-                                    <div class="photo">
-                                        <img src="img/perfume3.png" alt="MUNAKI Perfume">
-                                    </div>
-                                    <div class="shop_txt">
+                            </a>
+                            <a href="#" class="sub_product">
+                                <div class="photo">
+                                    <img src="img/perfume3.png" alt="MUNAKI Perfume">
+                                </div>
+                                <div class="shop_txt">
+                                    <p class="ex">지하로 내려가자 건물 뒤편의 숲과 연결되는 넓은 작업실이 나왔다. 여기저기 쌓여있는 목재 부스러기들과 미처 작품이 되지 못한 나무들. 공간은 오직 단 한 사람의 손길이 나이테처럼 쌓였다. 숲으로 이어지는 큰 문을 열자 기다렸다는 듯 틈 사이를 비집으며 비바람이 들이쳤고 구석에서 졸고 있던 주인 잃은 시간들이 일어난다.</p>
+                                    <div class="title_price">
                                         <h3>MUNAKI Perfume</h3>
-                                        <p class="price">155,000 KRW</p>
-                                        <p class="ex">지하로 내려가자 건물 뒤편의 숲과 연결되는 넓은 작업실이 나왔다. 여기저기 쌓여있는 목재 부스러기들과 미처 작품이 되지 못한 나무들. 공간은 오직 단 한 사람의 손길이 나이테처럼 쌓였다. 숲으로 이어지는 큰 문을 열자 기다렸다는 듯 틈 사이를 비집으며 비바람이 들이쳤고 구석에서 졸고 있던 주인 잃은 시간들이 일어난다.</p>
+                                        <p class="price">55,000 KRW</p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide s3">
-                                    <div class="photo">
-                                        <img src="img/perfume4.png" alt="Susie Salmon Multi Perfume">
-                                    </div>
-                                    <div class="shop_txt">
+                            </a>
+                            <a href="#" class="sub_product">
+                                <div class="photo">
+                                    <img src="img/perfume4.png" alt="Susie Salmon Multi Perfume">
+                                </div>
+                                <div class="shop_txt">
+                                    <p class="ex">방금 사온 꽃다발의 포장을 뜯어내 반 정도 물이 담긴 투명한 병에 꽂는다. 꽃 한 다발에서 내어지는 생기가 테이블 주변으로 서서히 퍼져나간다. 냉장고에서 사과를 꺼내 한 입 베어 물고 다시금 꽃다발에 코를 가까이 댄다. 옅게 깔린 꽃내음 위로 올라오는 상큼함을 나는 느리게 삼켜낸다.</p>
+                                    <div class="title_price">
                                         <h3>Susie Salmon Multi Perfume</h3>
                                         <p class="price">110,000 KRW</p>
-                                        <p class="ex">방금 사온 꽃다발의 포장을 뜯어내 반 정도 물이 담긴 투명한 병에 꽂는다. 꽃 한 다발에서 내어지는 생기가 테이블 주변으로 서서히 퍼져나간다. 냉장고에서 사과를 꺼내 한 입 베어 물고 다시금 꽃다발에 코를 가까이 댄다. 옅게 깔린 꽃내음 위로 올라오는 상큼함을 나는 느리게 삼켜낸다.</p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide s4">
-                                    <div class="photo">
-                                        <img src="img/perfume5.png" alt="Marine Orchid Multi Perfume">
-                                    </div>
-                                    <div class="shop_txt">
+                            </a>
+                            <a href="#" class="sub_product">
+                                <div class="photo">
+                                    <img src="img/perfume5.png" alt="Marine Orchid Multi Perfume">
+                                </div>
+                                <div class="shop_txt">
+                                    <p class="ex">서핑보드에 앉아 두 다리를 흔들어 바다 표면을 흩뜨렸다. 자잘하게 햇빛이 반사되는 물결 사이로 어렴풋한 바닷속을 내려다본다. 방금 들어갔다 나왔는데도 밖에서 보는 바다는 깊이감이 없어 다시금 속이 궁금해진다. 서핑보드에서 내려오자 온몸으로 전해지는 차가움에 짧은 숨을 들이쉬고 바다 아래로 헤엄쳤다.</p>
+                                    <div class="title_price">
                                         <h3>Marine Orchid Multi Perfume</h3>
                                         <p class="price">110,000 KRW</p>
-                                        <p class="ex">서핑보드에 앉아 두 다리를 흔들어 바다 표면을 흩뜨렸다. 자잘하게 햇빛이 반사되는 물결 사이로 어렴풋한 바닷속을 내려다본다. 방금 들어갔다 나왔는데도 밖에서 보는 바다는 깊이감이 없어 다시금 속이 궁금해진다. 서핑보드에서 내려오자 온몸으로 전해지는 차가움에 짧은 숨을 들이쉬고 바다 아래로 헤엄쳤다.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- 서브제품 태블릿 -->
+                        <div class="tablet_sub">
+                            <div class="swiper sub_swiper_cont">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide sub_product">
+                                        <a href="#">
+                                            <div class="photo">
+                                            <img src="img/perfume2.png" alt="Cask Signature Perfume">
+                                            </div>
+                                            <div class="shop_txt">
+                                                <div class="title_price">
+                                                    <h3>Cask Signature Perfume</h3>
+                                                    <p class="price">110,000 KRW</p>
+                                                </div>
+                                                <p class="ex">모임의 분위기가 무르익을 때쯤 자리를 피해 복도에서 담배를 태운다. 빈방을 찾아 가죽 소파에 파묻히듯 앉는다. 눈을 뜨니 테이블 맞은편에 누군가 앉아있다. 그녀는 무표정한 얼굴로 말없이 잔을 건넸고 나는 한 번에 들이킨다. 목이 타들어 가는 느낌에 두 눈을 질끈 감는다. 다시 눈을 뜨니 아침. 대놓고 비웃던 그녀의 낮은 웃음소리는 꽤 근사했다.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide sub_product">
+                                        <a href="#">
+                                            <div class="photo">
+                                                <img src="img/perfume3.png" alt="MUNAKI Perfume">
+                                            </div>
+                                            <div class="shop_txt">
+                                                <div class="title_price">
+                                                    <h3>MUNAKI Perfume</h3>
+                                                    <p class="price">55,000 KRW</p>
+                                                </div>
+                                                <p class="ex">지하로 내려가자 건물 뒤편의 숲과 연결되는 넓은 작업실이 나왔다. 여기저기 쌓여있는 목재 부스러기들과 미처 작품이 되지 못한 나무들. 공간은 오직 단 한 사람의 손길이 나이테처럼 쌓였다. 숲으로 이어지는 큰 문을 열자 기다렸다는 듯 틈 사이를 비집으며 비바람이 들이쳤고 구석에서 졸고 있던 주인 잃은 시간들이 일어난다.</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide sub_product">
+                                        <a href="#"><div class="photo">
+                                            <img src="img/perfume4.png" alt="Susie Salmon Multi Perfume">
+                                        </div>
+                                        <div class="shop_txt">
+                                            <div class="title_price">
+                                                <h3>Susie Salmon Multi Perfume</h3>
+                                                <p class="price">110,000 KRW</p>
+                                            </div>
+                                            <p class="ex">방금 사온 꽃다발의 포장을 뜯어내 반 정도 물이 담긴 투명한 병에 꽂는다. 꽃 한 다발에서 내어지는 생기가 테이블 주변으로 서서히 퍼져나간다. 냉장고에서 사과를 꺼내 한 입 베어 물고 다시금 꽃다발에 코를 가까이 댄다. 옅게 깔린 꽃내음 위로 올라오는 상큼함을 나는 느리게 삼켜낸다.</p>
+                                        </div></a>
+                                    </div>
+                                    <div class="swiper-slide sub_product">
+                                        <a href="#"><div class="photo">
+                                            <img src="img/perfume5.png" alt="Marine Orchid Multi Perfume">
+                                        </div>
+                                        <div class="shop_txt">
+                                            <div class="title_price">
+                                                <h3>Marine Orchid Multi Perfume</h3>
+                                                <p class="price">110,000 KRW</p>
+                                            </div>
+                                            <p class="ex">서핑보드에 앉아 두 다리를 흔들어 바다 표면을 흩뜨렸다. 자잘하게 햇빛이 반사되는 물결 사이로 어렴풋한 바닷속을 내려다본다. 방금 들어갔다 나왔는데도 밖에서 보는 바다는 깊이감이 없어 다시금 속이 궁금해진다. 서핑보드에서 내려오자 온몸으로 전해지는 차가움에 짧은 숨을 들이쉬고 바다 아래로 헤엄쳤다.</p>
+                                        </div></a>
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-button-prev arrow"></div>
+                            <div class="swiper-button-next arrow"></div>
+                            <div class="swiper-pagination"></div>
                         </div>
+                        
                     </div>
                 </section>
             </div>
             <!-- 2page 끝 -->
-            <div class="swiper-slide s3">
-                <div class="hd_copy">
-                    <!-- header 복제 위치 -->
-                </div>
+            <div class="swiper-slide mainPage_slide s3">
                 <section class="contents store">
                     <div class="title_more">
                         <div class="title">
@@ -162,18 +222,20 @@
                             <p class="place">주소 : 서울시 마포구 와우산로37길</p>
                             <p class="time">운영시간 : 13:00 - 22:00</p>
                         </div>
-                        <div class="img_list">
-                            <div class="mapo_img"><img src="img/store_mapo1.png" alt="마포내부사진1"></div>
-                            <div class="mapo_img"><img src="img/store_mapo2.png" alt="마포내부사진2"></div>
-                            <div class="mapo_img"><img src="img/store_mapo3.png" alt="마포내부사진3"></div>
+                        <div class="swiper img_list">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide mapo_img"><img src="img/store_mapo1.png" alt="마포내부사진1"></div>
+                                <div class="swiper-slide mapo_img"><img src="img/store_mapo2.png" alt="마포내부사진2"></div>
+                                <div class="swiper-slide mapo_img"><img src="img/store_mapo3.png" alt="마포내부사진3"></div>
+                                <div class="swiper-slide mapo_img"><img src="img/store_mapo1.png" alt="마포내부사진1"></div>
+                                <div class="swiper-slide mapo_img"><img src="img/store_mapo2.png" alt="마포내부사진2"></div>
+                                <div class="swiper-slide mapo_img"><img src="img/store_mapo3.png" alt="마포내부사진3"></div>
+                            </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div class="swiper-slide s4">
-                <div class="hd_copy">
-                    <!-- header 복제 위치 -->
-                </div>
+            <div class="swiper-slide mainPage_slide s4">
                 <section class="contents cafe">
                     <div class="title_more">
                         <div class="title">
@@ -185,253 +247,265 @@
                                 <li><a href="#">남산</a></li>
                                 <li><a href="#">안국</a></li>
                             </ul>
-                            <p>그랑핸드가 운영하는 카페 콤포타블은 마시는 향의 즐거움을 선사합니다.</p>
                         </div>
                         <div class="more">
                             <a href="#">+ VIEW MORE</a>
                         </div>
                     </div>
+                    <div class="cafe_txt">그랑핸드가 운영하는 카페 콤포타블은 마시는 향의 즐거움을 선사합니다.</div>
                     <div class="container seogyo">
                         <div class="cafe_list list">
                             <h3>콤포타블 서교</h3>
                             <p class="place">주소 : 서울 마포구 동교로 109-7</p>
                             <p class="time">운영시간 :12:00 - 21:00</p>
                         </div>
-                        <div class="img_list">
-                            <div class="seogyo_img"><img src="img/cafe1.png" alt="서교카페내부1"></div>
-                            <div class="seogyo_img"><img src="img/cafe2.png" alt="서교카페내부2"></div>
-                            <div class="seogyo_img"><img src="img/cafe3.png" alt="서교카페내부3"></div>
-                            <div class="seogyo_img"><img src="img/cafe4.png" alt="서교카페내부3"></div>
-                            <div class="seogyo_img"><img src="img/cafe5.png" alt="서교카페내부3"></div>
-                            <div class="seogyo_img"><img src="img/cafe6.png" alt="서교카페내부3"></div>
+                        <div class="swiper img_list">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide seogyo_img"><img src="img/cafe1.png" alt="서교카페내부1"></div>
+                                <div class="swiper-slide seogyo_img"><img src="img/cafe2.png" alt="서교카페내부2"></div>
+                                <div class="swiper-slide seogyo_img"><img src="img/cafe3.png" alt="서교카페내부3"></div>
+                                <div class="swiper-slide seogyo_img"><img src="img/cafe4.png" alt="서교카페내부3"></div>
+                                <div class="swiper-slide seogyo_img"><img src="img/cafe5.png" alt="서교카페내부3"></div>
+                                <div class="swiper-slide seogyo_img"><img src="img/cafe6.png" alt="서교카페내부3"></div>
+                            </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div class="swiper-slide s5">
-                <div class="hd_copy">
-                    <!-- header 복제 위치 -->
-                </div>
+            <!-- 4page 끝 -->
+            <div class="swiper-slide mainPage_slide s5">
                 <section class="contents event">
                     <div class="title_more">
                         <div class="title"><h2>Event.</h2></div>
                     </div>
-                    <div class="event_list container">
-                        <div class="bn event1">
-                            <div class="bn_title">
-                                <h3>GRANHAND.</h3>
-                                <p>온라인몰 가입 헤택</p>
+                    <div class="swiper event_list container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bn event1">
+                                <a href="#">
+                                    <div class="bn_title">
+                                        <h3>GRANHAND.</h3>
+                                        <p>온라인몰 가입 혜택</p>
+                                    </div>
+                                    <div class="bn_eventin">
+                                        <img src="img/event1.png" alt="적립급 5,000원, 전제품 무료 배송 제주">
+                                        <div class="gift_free">
+                                            <div class="gift_free_cont gift">
+                                                <img src="img/icon_gift.png" alt="적립급 5,000원 신규회원 한정 가입 시 자동 지급">
+                                                <h4>적립금 5,000원</h4>
+                                                <p>신규 회원 한정<br>가입 시 자동 지급</p>
+                                            </div>
+                                            <div class="gift_free_cont free">
+                                                <img src="img/icon_truck.png" alt="전제품 무료 배송 제주, 도서산간지역 추가 배송비 발생">
+                                                <h4>전제품 무료 배송</h4>
+                                                <p>제주, 도서산간지역<br>추가 배송비 발생</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="click">
+                                        <p>회원가입하고 혜택받기</p>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="bn_eventin">
-                                <div class="gift_free">
-                                    <img src="img/icon_gift.png" alt="적립급 5,000원 신규회원 한정 가입 시 자동 지급">
-                                    <h4>적립금 5,000원</h4>
-                                    <p>신규 회원 한정<br>가입 시 자동 지급</p>
-                                </div>
-                                <div class="gift_free">
-                                    <img src="img/icon_truck.png" alt="전제품 무료 배송 제주, 도서산간지역 추가 배송비 발생">
-                                    <h4>전제품 무료 배송</h4>
-                                    <p>제주, 도서산간지역<br>추가 배송비 발생</p>
-                                </div>
+                            <div class="swiper-slide bn event2">
+                                <a href="#">
+                                    <div class="bn_title">
+                                        <h3>명절 선물세트 OPEN!</h3>
+                                        <p>+트와 베르 핸드솝 증정</p>
+                                    </div>
+                                    <div class="bn_eventin">
+                                        <img src="img/event2.png" alt="명절 선물세트 사진">
+                                    </div>
+                                    <div class="click">
+                                        <p>자세히 보기</p>
+                                    </div>
+                                </a>
                             </div>
-                            <a href="#">회원가입하고 혜택받기</a>
+                            <div class="swiper-slide bn event3">
+                                <a href="#">
+                                    <div class="bn_title">
+                                        <h3>Komfortable COFFEE</h3>
+                                        <p>홀 케이크 사전 예약 시작!</p>
+                                    </div>
+                                    <div class="bn_eventin">
+                                        <img src="img/event3.png" alt="망고케이크 사진">
+                                    </div>
+                                    <div class="click">
+                                        <p>예약하러 가기</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="bn event2">
-                            <div class="bn_title">
-                                <h3>명절 선물세트 OPEN!</h3>
-                                <p>+트와 베르 핸드솝 증정</p>
-                            </div>
-                            <div class="bn_eventin">
-                                <img src="img/event2.png" alt="명절 선물세트 사진">
-                            </div>
-                            <a href="#">자세히 보기</a>
-                        </div>
-                        <div class="bn event3"></div>
-                            <div class="bn_title">
-                                <h3>Komfortable COFFEE</h3>
-                                <p>홀 케이크 사전 예약 시작!</p>
-                            </div>
-                            <div class="bn_eventin">
-                                <img src="img/event3.png" alt="망고케이크 사진">
-                            </div>
-                            <a href="#">예약하러 가기</a>
-                        </div>
+                    </div>
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
                 </section>
             </div>
-            <div class="swiper-slide s6">
-                <div class="hd_copy">
-                    <!-- header 복제 위치 -->
-                </div>
+            <!-- 5page 끝 -->
+            <div class="swiper-slide mainPage_slide s6">
                 <section class="contents picture">
                     <div class="title_more">
                         <div class="title">
-                            <h2>picture.</h2>
+                            <h2>Picture.</h2>
+                        </div>
+                        <div class="more">
+                            <a href="#">+ VIEW MORE</a>
                         </div>
                     </div>
-                    <div class="basic"><img src="img/picture1.png" alt="Instant Moment, 2022"></div>
-                    <div class="swiper picture_list">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="img/picture1.png" alt="scatter">
-                                    <h3>Scatter</h3>
-                                    <p class="date">2024-08-01</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="img/picture2.png" alt="cococay.&epeul.">
-                                    <h3>COCOCAY.&EPEUL.</h3>
-                                    <p class="date">2023-11-27</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="img/picture3.png" alt="new fragrances:soie.">
-                                    <h3>New Fragrances:Soie.</h3>
-                                    <p class="date">2024-01-17</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="img/picture4.png" alt="1 january 2024:open ne...">
-                                    <h3>1 January 2024: Open New Komfortabel at Gwanghwamun</h3>
-                                    <p class="date">2024-01-17</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="img/picture5.png" alt="Better Than Sweet, 2024">
-                                    <h3>Better Than Sweet, 2024</h3>
-                                    <p class="date">2024-01-17</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="img/picture6.png" alt="open new granhand &...">
-                                    <h3>Open New GRANHAND & Komfortabel at Seogyo</h3>
-                                    <p class="date">2024-01-17</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="img/picture7.png" alt="komfortabel namsan:fil..">
-                                    <h3>Komfortabel Namsan: Filter Zone Open!</h3>
-                                    <p class="date">2023-11-02</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="img/picture8.png" alt="dark afternoon">
-                                    <h3>Dark Afternoon</h3>
-                                    <p class="date">2023-11-01</p>
-                                </a>
+                    <div class="container">
+                        <div class="basic"><img src="img/picture1.png" alt="Instant Moment, 2022"></div>
+                        <div class="swiper pic_list">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide pic_slide">
+                                    <a href="#" class="pic_cont">
+                                        <img src="img/picture2.png" alt="scatter">
+                                        <div class="pic_txt">
+                                            <h3>Scatter</h3>
+                                            <p class="date">2024-08-01</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="pic_cont">
+                                        <img src="img/picture6.png" alt="Better Than Sweet, 2024">
+                                        <div class="pic_txt">
+                                            <h3>Better Than Sweet, 2024</h3>
+                                            <p class="date">2024-01-17</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide pic_slide">
+                                    <a href="#" class="pic_cont">
+                                        <img src="img/picture3.png" alt="cococay.&epeul.">
+                                        <div class="pic_txt">
+                                            <h3>COCOCAY.&EPEUL.</h3>
+                                            <p class="date">2023-11-27</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="pic_cont">
+                                        <img src="img/picture7.png" alt="open new granhand &...">
+                                        <div class="pic_txt">
+                                            <h3>Open New GRANHAND & Komfortabel at Seogyo</h3>
+                                            <p class="date">2024-01-17</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide pic_slide">
+                                    <a href="#" class="pic_cont">
+                                        <img src="img/picture4.png" alt="new fragrances:soie.">
+                                        <div class="pic_txt">
+                                            <h3>New Fragrances:Soie.</h3>
+                                            <p class="date">2024-01-17</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="pic_cont">
+                                        <img src="img/picture8.png" alt="komfortabel namsan:fil..">
+                                        <div class="pic_txt">
+                                            <h3>Komfortabel Namsan: Filter Zone Open!</h3>
+                                            <p class="date">2023-11-02</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide pic_slide">
+                                    <a href="#" class="pic_cont">
+                                        <img src="img/picture5.png" alt="1 january 2024:open ne...">
+                                        <div class="pic_txt">
+                                            <h3>1 January 2024: Open New Komfortabel at Gwanghwamun</h3>
+                                            <p class="date">2024-01-17</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="pic_cont">
+                                        <img src="img/picture9.png" alt="dark afternoon">
+                                        <div class="pic_txt">
+                                            <h3>Dark Afternoon</h3>
+                                            <p class="date">2023-11-01</p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div class="swiper-slide s7">
-                <div class="hd_copy">
-                    <!-- header 복제 위치 -->
-                </div>
-                <section class="contents journal">
+            <!-- 6page 끝 -->
+            <div class="swiper-slide mainPage_slide s7">
+                <section class="contents journal_footer">
                     <div class="title_more">
                         <div class="title">
                             <h2>Journal.</h2>
                         </div>
+                        <div class="more">
+                            <a href="#">+ VIEW MORE</a>
+                        </div>
                     </div>
-                    <div class="swiper journal_list">
+                    <div class="swiper journal_list container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="#" class="jour_cont">
                                     <img src="img/Journal1.png" alt="여름의 냄새가 그림이 된다면: 캐롤라인 페롱">
-                                    <h3>여름의 냄새가 그림이 된다면: 캐롤라인 페롱</h3>
-                                    <p class="date">2024-08-23</p>
+                                    <div class="jour_txt">
+                                        <h3>여름의 냄새가 그림이 된다면: 캐롤라인 페롱</h3>
+                                        <p class="date">2024-08-23</p>
+                                    </div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="#" class="jour_cont">
                                     <img src="img/Journal2.png" alt="클래식 입문기 1: 어려워 '보이는' 음악, 클래식">
-                                    <h3>클래식 입문기 1: 어려워 '보이는' 음악, 클래식</h3>
-                                    <p class="date">2024-07-26</p>
+                                    <div class="jour_txt">
+                                        <h3>클래식 입문기 1: 어려워 '보이는' 음악, 클래식</h3>
+                                        <p class="date">2024-07-26</p>
+                                    </div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="#" class="jour_cont">
                                     <img src="img/Journal3.png" alt="1st Illustration Contest.">
-                                    <h3>1st Illustration Contest.</h3>
-                                    <p class="date">2024-07-08</p>
+                                    <div class="jour_txt">
+                                        <h3>1st Illustration Contest.</h3>
+                                        <p class="date">2024-07-08</p>
+                                    </div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="#" class="jour_cont">
                                     <img src="img/Journal4.png" alt="공전하는 회전목마">
-                                    <h3>공전하는 회전목마</h3>
-                                    <p class="date">2024-06-21</p>
+                                    <div class="jour_txt">
+                                        <h3>공전하는 회전목마</h3>
+                                        <p class="date">2024-06-21</p>
+                                    </div> 
                                 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
+                                <a href="#" class="jour_cont">
                                     <img src="img/Journal5.png" alt="어린 시절의 노스탤지어 : 이안 호워스">
-                                    <h3>어린 시절의 노스탤지어 : 이안 호워스</h3>
-                                    <p class="date">2024-05-24</p>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="img/Journal1.png" alt="여름의 냄새가 그림이 된다면: 캐롤라인 페롱">
-                                    <h3>여름의 냄새가 그림이 된다면: 캐롤라인 페롱</h3>
-                                    <p class="date">2024-08-23</p>
+                                    <div class="jour_txt">
+                                        <h3>어린 시절의 노스탤지어 : 이안 호워스</h3>
+                                        <p class="date">2024-05-24</p>
+                                    </div>
                                 </a>
                             </div>
                         </div>
                     </div>
+                    <footer>
+                        <div class="f_txt">
+                            <p><span>대표</span> 정준혁  <span>상호</span> (유)그랑핸드</p>
+                            <p><span>사업자번호</span> 127-88-01898 통신판매업 2020-서울종로-0623</p>
+                            <p><span>주소</span> 서울시 종로구 자하문로4길 14-2</p>
+                            <p><span>메일</span> hello@granhand.com <span>전화</span> 02-333-6525</p>
+                            <p>Copyright &copy; GRANHAND. All rights reserved</p>
+                        </div>
+                        <div class="f_right">
+                            <p class="f_story">향은 보이지도, 잡히지도 않지만, 우리에게 수많은 기억과 감정을 각인시키고, 나아가 우리 삶 속에서 많은 부분을 결정합니다. 그랑핸드는 이러한 향의 가치를 믿으며, 이를 매개로 한 끊임없는 시도를 통해 향의 일상화를 꿈꿉니다. 그랑핸드는 쉽게 소비되고 잊혀질 무언가가 아닌, 보이지 않는 곳에서 뚜렷한 존재감으로 모든 사람들에게 우리의 마음과 온기를 전하고 싶습니다.</p>
+                            <div class="f_menu">
+                                <a href="#">그랑핸드란</a>
+                                <a href="#">고객센터</a>
+                                <a href="#">이용약관</a>
+                                <a href="#"><span>개인정보처리방침</span></a>
+                                <a href="#">이용안내</a>
+                            </div>
+                        </div>
+                    </footer>
                 </section>
-                <footer>
-                    <div class="f_txt">
-                        <p><span>대표</span> 정준혁  <span>상호</span> (유)그랑핸드</p>
-                        <p><span>사업자번호</span> 127-88-01898 통신판매업 2020-서울종로-0623</p>
-                        <p><span>주소</span> 서울시 종로구 자하문로4길 14-2</p>
-                        <p><span>메일</span> hello@granhand.com <span>전화</span> 02-333-6525</p>
-                        <p>Copyright &copy; GRANHAND. All rights reserved</p>
-                    </div>
-                    <div class="f_right">
-                        <p class="f_story">향은 보이지도, 잡히지도 않지만, 우리에게 수많은 기억과 감정을 각인시키고, 나아가 우리 삶 속에서 많은 부분을 결정합니다. 그랑핸드는 이러한 향의 가치를 믿으며, 이를 매개로 한 끊임없는 시도를 통해 향의 일상화를 꿈꿉니다. 그랑핸드는 쉽게 소비되고 잊혀질 무언가가 아닌, 보이지 않는 곳에서 뚜렷한 존재감으로 모든 사람들에게 우리의 마음과 온기를 전하고 싶습니다.</p>
-                        <div class="f_menu">
-                            <a href="#">그랑핸드란</a>
-                            <a href="#">고객센터</a>
-                            <a href="#">이용약관</a>
-                            <a href="#">개인정보처리방침</a>
-                            <a href="#">이용방침</a>
-                        </div>
-                    </div>
-                </footer>
             </div>
-            <div class="swiper-slide s8">
-                <footer class="mb_footer">
-                    <div class="hd_copy">
-                        <!-- header 복제 위치 -->
-                    </div>
-                    <div class="f_right">
-                        <p class="f_story">향은 보이지도, 잡히지도 않지만, 우리에게 수많은 기억과 감정을 각인시키고, 나아가 우리 삶 속에서 많은 부분을 결정합니다. 그랑핸드는 이러한 향의 가치를 믿으며, 이를 매개로 한 끊임없는 시도를 통해 향의 일상화를 꿈꿉니다. 그랑핸드는 쉽게 소비되고 잊혀질 무언가가 아닌, 보이지 않는 곳에서 뚜렷한 존재감으로 모든 사람들에게 우리의 마음과 온기를 전하고 싶습니다.</p>
-                        <div class="f_menu">
-                            <a href="#">그랑핸드란</a>
-                            <a href="#">고객센터</a>
-                            <a href="#">이용약관</a>
-                            <a href="#">개인정보처리방침</a>
-                            <a href="#">이용방침</a>
-                        </div>
-                    </div>
-                    <div class="f_txt">
-                        <p><span>대표</span> 정준혁  <span>상호</span> (유)그랑핸드</p>
-                        <p><span>사업자번호</span> 127-88-01898 통신판매업 2020-서울종로-0623</p>
-                        <p><span>주소</span> 서울시 종로구 자하문로4길 14-2</p>
-                        <p><span>메일</span> hello@granhand.com <span>전화</span> 02-333-6525</p>
-                        <p>Copyright &copy; GRANHAND. All rights reserved</p>
-                    </div>
-                </footer>
-            </div>
+            <!-- 7page 끝 -->
         </div>
     </div>
 </body>

@@ -1,16 +1,99 @@
-.main {}
-.main .swiper-wrapper {}
-.main .swiper-wrapper .s1 {}
-.main .swiper-wrapper .s1 header {}
-.main .swiper-wrapper .s1 header .logo {}
-.main .swiper-wrapper .s1 header .logo img {}
-.main .swiper-wrapper .s1 header nav {}
-.main .swiper-wrapper .s1 header nav a {}
-.main .swiper-wrapper .s1 header .right {}
-.main .swiper-wrapper .s1 header .right a {}
-.main .swiper-wrapper .s1 header .right a img {}
-.main .swiper-wrapper .s1 header .mobile {display: none;}
-.main .swiper-wrapper .s1 header .mobile span {}
-.main .swiper-wrapper .s1 header .mobile p {}
-.main .swiper-wrapper .s1 .mainVisual {}
-.main .swiper-wrapper .s1 .mainVisual video {}
+body {
+    background-color: #FDFBF4;
+}
+header {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed; top: 0; left: 0;
+    z-index: 300;
+}
+header .logo {margin-left: 10px;}
+header .logo a img {width: 100%;}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+header nav a {
+    font-size: 1.25rem;
+    font-family: 'YESMyoungjo-Regular';
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+}
+header nav a:hover {
+    border-bottom: 1px solid #000;
+}
+header .right {
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+    margin-right: 10px;
+}
+header .right a {}
+header .right a img {width: 100%;}
+.mainPage {margin-top: 60px;}
+.mainPage .swiper-wrapper {}
+.mainPage .swiper-wrapper .s1 {
+    background: url(../img/mb_bg.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.mainPage .swiper-wrapper .s1 .mobile {display: none;}
+.mainPage .swiper-wrapper .s1 .mainVisual {
+}
+.mainPage .swiper-wrapper .s1 .mainVisual video {
+    width: 100%;
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -54%);
+}
+/* ============ footer =========== */
+.mainPage .swiper-wrapper .s7 {position: relative;}
+.mainPage .swiper-wrapper .s7 .journal_footer footer {
+    background-color: #D9D9D9;
+    margin-top: 45px;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    position: absolute; bottom: 0; left: 0; transform: translateY(-35%);
+    width: 100%;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer footer span {
+    font-weight: 600;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt {margin-left: 120px;}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt p {
+    margin-bottom: 7px;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt p:last-child {
+    color: #666;
+    font-weight: 200;
+    margin: 15px 0 0;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_right {margin-right: 120px;}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_story {
+    font-family: 'YESMyoungjo-Regular';
+    width: 830px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_menu {
+    text-align: right;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_menu a {
+    margin-right: 30px;
+    transition: all 0.2s;
+    border-bottom: 0.5px solid transparent;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_menu a:hover {
+    border-bottom: 0.5px solid #333;
+}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_menu a:last-child {
+    margin-right: 0;
+}

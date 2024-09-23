@@ -1,0 +1,205 @@
+@media screen and (max-width: 1600px){
+    /* ====================== shop ==================== */
+    .mainPage .mainPage_wrapper .s2 .shop {
+        width: calc(100% - 80px);
+        margin: 70px auto;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume {
+        justify-content: center;
+    }
+    /* =============== 메인 product ================ */
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product {
+        width: 821px;
+        margin-right: 100px;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .photo {}
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .photo img {}
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt {
+        position: relative;
+        background-color: transparent;
+        width: auto;
+        padding: 20px 0px;
+        opacity: 1;
+        transition: none;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product:hover .shop_txt {
+        background-color: transparent;
+        bottom: -5px; left: 0;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt .title_price {
+        display: flex;
+        justify-content: space-between;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt .title_price h3 {
+        color: #333;
+        font-size: 1.5rem;
+        font-family: 'YESMyoungjo-Regular';
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt .title_price .price {
+        color: #333;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt .ex {
+        color: #333;
+        margin-top: 20px;
+        line-height: 1.5;
+        overflow: visible;
+        height: 75px;
+        width: 100%;
+        font-weight: 400;
+        display: block;
+    }
+    /* 서브 */
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub {
+        display: none;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub {
+        display: block;
+        position: relative;
+        margin-right: 40px;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont {
+        width: 316px;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper {}
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product {}            
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a {
+    }            
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .photo img {width: 100%;}
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt {
+        margin-top: 10px;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt .title_price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt .title_price h3 {
+        font-family: 'YESMyoungjo-Regular';
+        margin: 20px 0 15px;
+        font-weight: 600;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt .title_price .price {
+        font-family: 'YESMyoungjo-Regular';
+        font-size: 0.75rem;
+        margin-top: 5px;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .shop_txt .ex {
+        line-height: 1.6;
+        font-size: 0.875rem;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-button-prev {
+        top: 50%; left: -50px; transform: translateY(-50%);
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-button-next {
+        top: 50%; right: -50px; transform: translateY(-50%);
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .arrow {
+        color: #aaa;
+        transition: all 0.2s;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .arrow:hover {
+        color: #333;
+    }
+    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-pagination {
+    }
+    .mainPage .mainPage_wrapper .s3 .store .title_more {
+        width: calc(100% - 80px);
+    }
+    .mainPage .mainPage_wrapper .s4 .cafe .title_more {
+        width: calc(100% - 80px);
+    }
+    .mainPage .swiper-wrapper .s5 .event {
+        width: calc(100% - 80px);
+        margin: 50px auto;
+        position: relative;
+    }
+    .mainPage .swiper-wrapper .s5 .event .line1 {
+        top: 50%; left: 50%; transform: translate(-50%, -50%);
+        height: 70%;
+    }
+    .mainPage .swiper-wrapper .s5 .event .line2 {
+        display: none;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin {
+        text-align: center;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
+        width: 80%;
+    }
+    .mainPage .swiper-wrapper .s6 .picture {
+        width: calc(100% - 80px);
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer .title_more {
+        margin: 45px 40px 25px;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer .container {width: calc(100% - 80px);}
+    }
+@media screen and (max-width: 1500px){
+/* footer 조정 */
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_story {
+    font-family: 'YESMyoungjo-Regular';
+    width: 750px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 0.875rem;
+    color: #555;
+}
+}
+@media screen and (max-width: 1200px){
+    .mainPage .swiper-wrapper .s1 .mainVisual video {
+        width: 140%;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
+        width: 60%;
+    }
+    .mainPage .swiper-wrapper .s5 .event .line1 {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+    header nav a {
+        font-size: 1rem;
+    }
+    header .right {
+        width: 12%;
+    }
+    header .right a {}
+    .mainPage .swiper-wrapper .s6 .picture .container .basic {display: none;}
+    .mainPage .swiper-wrapper .s1 .mainVisual video {
+        width: 180%;
+    }
+}
+@media screen and (max-width: 600px){
+    header .logo {margin-left: 20px;}
+    header .right {
+        margin-right: 20px;
+        width: 20%;
+    }
+    header nav {
+        position: absolute;
+        top: 40px; left: 50%; transform: translateX(-50%);
+        width: 90%;
+    }
+    .mainPage {margin-top: 80px;}
+    .mainPage .swiper-wrapper .s1 .mainVisual video {
+        display: none;
+    }
+    .mainPage .swiper-wrapper .s1 .mobile {
+        display: block;
+        width: 70%;
+        margin-left: 20px;
+        position: absolute;
+        top: 65%; left: 0;
+    }
+    .mainPage .swiper-wrapper .s1 .mobile p {
+        color: #000;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        font-weight: 300;
+    }
+    .mainPage .swiper-wrapper .s1 .mobile p span {
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: #000;
+    }
+}
