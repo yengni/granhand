@@ -65,6 +65,7 @@ header .right a img {width: 100%;}
 .mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt {
     margin-left: 120px;
     width: 100%;
+    font-weight: 200;
 }
 .mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt p {
     margin-bottom: 7px;
