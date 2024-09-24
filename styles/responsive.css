@@ -146,6 +146,16 @@
     .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont h4 {
         margin: 10px 0;
     }
+    .mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide .jour_cont .jour_txt h3 {
+        font-size: 1rem;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide .jour_cont .jour_txt {
+        flex-flow: column;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide .jour_cont .jour_txt p {
+        margin-top: 10px;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 1200px){
     .mainPage .swiper-wrapper .s1 .mainVisual video {
@@ -306,9 +316,6 @@
     .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
         width: 80%;
     }
-    .mainPage .swiper-wrapper .s7 .journal_footer footer {
-        transform: translateY(-20%);
-    }
 }
 @media screen and (max-width: 600px){
     header .right {
@@ -395,10 +402,11 @@
     .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt p {
         font-size: 0.75rem;
     }
-    
     .mainPage .swiper-wrapper .s7 .journal_footer footer {
         flex-flow: column-reverse;
         padding: 20px 20px;
+        height: 40vh;
+        justify-content: left;
     }
     .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right {
         display: flex;
@@ -411,9 +419,6 @@
     }
     .mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt {
         margin-left: 0; margin-top: 15px;
-    }
-    .mainPage .swiper-wrapper .s7 .journal_footer footer {
-        transform: translateY(-25%);
     }
 }
 @media screen and (max-width: 500px){
