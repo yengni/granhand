@@ -399,6 +399,9 @@
     .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt p {
         font-size: 0.75rem;
     }
+    .mainPage .swiper-wrapper .s7 .journal_footer {
+        overflow: visible;
+    }
     .mainPage .swiper-wrapper .s7 .journal_footer footer {
         flex-flow: column-reverse;
         padding: 20px 20px;
