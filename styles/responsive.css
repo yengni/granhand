@@ -405,7 +405,7 @@
     .mainPage .swiper-wrapper .s7 .journal_footer footer {
         flex-flow: column-reverse;
         padding: 20px 20px;
-        height: 40vh;
+        height: 50vh;
         justify-content: left;
     }
     .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right {
