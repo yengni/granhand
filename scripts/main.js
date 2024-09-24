@@ -9,6 +9,7 @@ const shop = new Swiper(".sub_swiper_cont", {
     },
     pagination: {
         el: '.perfume .tablet_sub .swiper-pagination',
+        clickable : true
     },
 })
 const store = new Swiper(".mapo .img_list", {
@@ -21,6 +22,7 @@ const store = new Swiper(".mapo .img_list", {
     },
     pagination: {
         el: '.store .mapo .swiper-pagination',
+        clickable : true
     },
     centeredSlides: true,
     loop: true,
@@ -55,6 +57,7 @@ const cafe = new Swiper(".cafe .img_list", {
     loop : true,
     pagination: {
         el: '.cafe .seogyo .swiper-pagination',
+        clickable : true
     },
     breakpoints: {
         900: {
@@ -70,7 +73,7 @@ const cafe = new Swiper(".cafe .img_list", {
 const event = new Swiper(".event .event_list", {
     slidesPerView: 1, //한 화면 기준 보이는 슬라이드 개수
     spaceBetween: 0, //슬라이드 사이 간격
-    /* autoplay : {delay:5000}, */
+    autoplay : {delay:5000},
     loop : true,
     navigation:{
         prevEl : '.event .event_list .swiper-button-prev',
@@ -78,6 +81,7 @@ const event = new Swiper(".event .event_list", {
     },
     pagination: {
         el: '.event .event_list .swiper-pagination',
+        clickable : true
     },
     breakpoints: {
         1100: {
@@ -91,9 +95,21 @@ const event = new Swiper(".event .event_list", {
     }
 })
 const picture = new Swiper(".pic_list", {
-    slidesPerView: 2,
+    slidesPerView: 1.6,
     spaceBetween: 20,
+    navigation:{
+        prevEl : '.picture .container .swiper-button-prev',
+        nextEl : '.picture .container .swiper-button-next',
+    },
     breakpoints: {
+        400: {
+            slidesPerView: 1.8,
+            spaceBetween: 20
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
         900: {
             slidesPerView: 2.2,
             spaceBetween: 20
@@ -129,9 +145,37 @@ const picture = new Swiper(".pic_list", {
     }
 })
 const journal = new Swiper(".journal_list", {
-    slidesPerView: 4,
+    slidesPerView: 1.8,
     spaceBetween: 20,
+    navigation:{
+        prevEl : '.journal_footer .journal_list .swiper-button-prev',
+        nextEl : 'journal_footer .journal_list .swiper-button-next',
+    },
     breakpoints: {
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        500: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
+        },
+        700: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        800: {
+            slidesPerView: 3.2,
+            spaceBetween: 20
+        },
+        900: {
+            slidesPerView: 3.6,
+            spaceBetween: 20
+        },
+        1000: {
+            slidesPerView: 4,
+            spaceBetween: 20
+        },
         1200: {
             slidesPerView: 4.6,
             spaceBetween: 20

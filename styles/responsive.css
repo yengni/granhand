@@ -145,19 +145,10 @@
     .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right {margin-right: 40px;}
     }
 @media screen and (max-width: 1500px){
-/* footer 조정 */
-.mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_story {
-    font-family: 'YESMyoungjo-Regular';
-    width: 750px;
-    line-height: 1.7;
-    margin-bottom: 15px;
-    font-size: 0.875rem;
-    color: #555;
-}
 }
 @media screen and (max-width: 1300px){
-    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
-        width: 95%;
+    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont h4 {
+        margin: 10px 0;
     }
 }
 @media screen and (max-width: 1200px){
@@ -174,9 +165,28 @@
 }
 @media screen and (max-width: 1100px){
     .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
-        width: 60%;
+        width: 50%;
     }
     .mainPage .swiper-wrapper .s6 .picture .container .basic img {}
+    .mainPage .swiper-wrapper .s5 .event {
+        width: calc(100% - 80px);
+        margin: 30px auto;
+        position: relative;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_story {
+        font-size: 0.875rem;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer {
+        font-size: 0.75rem;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_menu a {
+        margin-right: 0px;
+    }
 }
 @media screen and (max-width: 900px){
     header nav a {
@@ -194,8 +204,11 @@
     .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product {
         display: none;
     }
-    .mainPage .mainPage_wrapper .s2 .shop {
+    .mainPage .mainPage_wrapper .mainPage_slide .contents {
         margin: 30px auto;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer .title_more {
+        margin: 30px 40px 30px;
     }
     .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub {
         width: 70%;
@@ -218,14 +231,10 @@
         width: 70px;
     }
     .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
-        width: 80%;
-    }
-    .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont h4 {
-        margin: 18px 0;
+        width: 60%;
     }
     .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift {margin-right: 20px;}
     .mainPage .swiper-wrapper .s6 .picture .container .basic {display: none;}
-    .mainPage .swiper-wrapper .s6 .picture .container .pic_list {width: 80%;}
     .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list {
         position: absolute;
         top: 108%;
@@ -242,7 +251,36 @@
     }
     .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .place {margin-left: 20px; margin-right: 10px;}
     .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .time {}
-    .mainPage .mainPage_wrapper .s3 .store {margin : 30px auto;}
+    .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont:first-child .pic_txt {
+        margin-bottom: 50px;
+    }
+    .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt {
+        display: flex;
+        margin-top: 8px; margin-bottom: 25px;
+        justify-content: space-between;
+        flex-flow: column;
+    }
+    .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt h3 {
+        font-size: 1.125rem;
+        margin: 10px 0;
+    }
+    .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt p {
+        font-size: 0.875rem;
+        width: 100%;
+        text-align: right;
+    }
+    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .arrow {
+        top: 50%;
+    }
+    .mainPage .mainPage_wrapper .s6 .picture .container .swiper-button-prev {
+        left: 10px;
+    }
+    .mainPage .mainPage_wrapper .s6 .picture .container .swiper-button-next {
+        right: 10px;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_story {
+        font-size: 0.75rem;
+    }
 }
 @media screen and (max-width: 700px){
     .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title {position: relative;
@@ -271,6 +309,12 @@
     }
     .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
         width: 90%;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
+        width: 80%;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer {
+        transform: translateY(-20%);
     }
 }
 @media screen and (max-width: 600px){
@@ -341,10 +385,43 @@
         font-size: 1rem;
     }
     .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
-        width: 100%;
+        width: 90%;
     }
     .mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt {margin-left: 20px;}
     .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right {margin-right: 20px;}
+    .mainPage .swiper-wrapper .s6 .picture .container .pic_list {width: 90%;}
+    .mainPage .mainPage_wrapper .s6 .picture .container .swiper-button-prev {
+        left: -15px;
+    }
+    .mainPage .mainPage_wrapper .s6 .picture .container .swiper-button-next {
+        right: -15px;
+    }
+    .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt h3 {
+        font-size: 1rem;
+    }
+    .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt p {
+        font-size: 0.75rem;
+    }
+    
+    .mainPage .swiper-wrapper .s7 .journal_footer footer {
+        flex-flow: column-reverse;
+        padding: 20px 20px;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right {
+        display: flex;
+        flex-flow: column-reverse;
+        margin-right: 0;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_menu {
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt {
+        margin-left: 0; margin-top: 15px;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer {
+        transform: translateY(-25%);
+    }
 }
 @media screen and (max-width: 500px){
     .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-pagination .swiper-pagination-bullet {
@@ -368,8 +445,6 @@
     .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list {
         width: 300px;
     }
-}
-@media screen and (max-width: 470px){
     .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont img {
         width: 60%;
     }
@@ -381,6 +456,19 @@
     }
     .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont p {
         font-size: 0.688rem;
+    }
+}
+@media screen and (max-width: 470px){
+    .mainPage .swiper-wrapper .s5 .event .event_list .bn .click {width: 180px; height: 40px;}
+    .mainPage .swiper-wrapper .s5 .event .event_list .bn .click > p {
+        font-size: 1rem;
+        line-height: 35px;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .bn .bn_title h3 {
+        font-size: 1.25rem;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .bn .bn_title p {
+        font-size: 1rem;
     }
 }
 @media screen and (max-width: 380px){
@@ -419,5 +507,8 @@
     }
     .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin .gift_free .gift_free_cont img {
         width: 40%;
+    }
+    .mainPage .swiper-wrapper .s5 .event .event_list .bn .bn_title h3 {
+        font-size: 1.125rem;
     }
 }

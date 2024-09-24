@@ -57,27 +57,29 @@ header .right a img {width: 100%;}
     font-size: 0.875rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 10px;
-    position: absolute; bottom: 0; left: 0; transform: translateY(-35%);
+    padding: 30px 10px 40px;
+    position: absolute; bottom: 0; left: 0; transform: translateY(-25%);
     width: 100%;
 }
 .mainPage .swiper-wrapper .s7 .journal_footer footer span {
     font-weight: 600;
 }
-.mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt {margin-left: 120px;}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt {
+    margin-left: 120px;
+    width: 100%;
+}
 .mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt p {
     margin-bottom: 7px;
+    width: 100%;
 }
 .mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt p:last-child {
     color: #666;
     font-weight: 200;
     margin: 15px 0 0;
 }
-.mainPage .swiper-wrapper .s7 .journal_footer footer .f_right {margin-right: 120px;}
+.mainPage .swiper-wrapper .s7 .journal_footer footer .f_right {margin-right: 120px; width: 100%;}
 .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_story {
     font-family: 'YESMyoungjo-Regular';
-    width: 830px;
     line-height: 1.7;
     margin-bottom: 15px;
     font-size: 1rem;

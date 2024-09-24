@@ -1,8 +1,6 @@
 /* ===========================공통============================== */
 .mainPage {height: 100vh;}
-.mainPage .swiper-wrapper {}
 .mainPage .mainPage_wrapper .mainPage_slide {height: 100vh; overflow: hidden;}
-.mainPage .mainPage_wrapper .mainPage_slide .contents {}
 .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more {
     display: flex;
     justify-content: space-between;
@@ -21,8 +19,6 @@
     display: flex;
     width: 400px;
     justify-content: space-between;
-}
-.mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li {
 }
 .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title .list li:hover a {
     color: #EBDCCA;
@@ -67,12 +63,7 @@
     font-size: 0.875rem;
 }
 .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .place {margin-left: 120px; margin-right: 10px;}
-.mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .time {}
 /* ============== 매장 사진 ============== */
-.mainPage .mainPage_wrapper .mainPage_slide .contents .container .img_list {}
-.mainPage .mainPage_wrapper .mainPage_slide .contents .container .img_list {}
-.mainPage .mainPage_wrapper .mainPage_slide .contents .container .img_list > div {}
-.mainPage .mainPage_wrapper .mainPage_slide .contents .container .img_list > div img {}
 /*  */
 .mainPage .mainPage_wrapper .mainPage_slide .contents .container .arrow {
     color: #aaa;
@@ -97,21 +88,48 @@
 .mainPage .mainPage_wrapper .mainPage_slide .contents .container .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #d7c2a9;
 }
+/* event arrow, pagination */
+.mainPage .mainPage_wrapper .s5 .event .event_list .arrow {
+    top: 50%; transform:  translateY(-50%);
+}
+.mainPage .mainPage_wrapper .s5 .event .event_list .swiper-button-prev {
+    left: 0%;
+}
+.mainPage .mainPage_wrapper .s5 .event .event_list .swiper-button-next {
+    right: 0%;
+}
+.mainPage .mainPage_wrapper .s5 .event .event_list {
+    padding-bottom: 60px;
+}
+.mainPage .mainPage_wrapper .s5 .event .event_list .swiper-pagination {
+    bottom: 0px;
+}
+/* picture arrow, pagination */
+.mainPage .mainPage_wrapper .s6 .picture .container .arrow {
+    top: 50%; transform:  translateY(-50%);
+}
+.mainPage .mainPage_wrapper .s6 .picture .container .swiper-button-prev {
+    left: -35px;
+}
+.mainPage .mainPage_wrapper .s6 .picture .container .swiper-button-next {
+    right: -35px;
+}
+/* picture arrow, pagination */
+.mainPage .mainPage_wrapper .s7 .journal_footer .container .arrow {
+    top: 50%; transform:  translateY(-50%);
+}
+.mainPage .mainPage_wrapper .s7 .journal_footer .container .swiper-button-prev {
+    left: 10px;
+}
+.mainPage .mainPage_wrapper .s7 .journal_footer .container .swiper-button-next {
+    right: 10px;
+}
 /* ============================개별================================ */
 /* ====================== shop ==================== */
 .mainPage .mainPage_wrapper .s2 .shop {
     width: calc(100% - 240px);
     margin: 70px auto;
 }
-.mainPage .mainPage_wrapper .s2 .shop .title_more {}
-.mainPage .mainPage_wrapper .s2 .shop .title_more .title {}
-.mainPage .mainPage_wrapper .s2 .shop .title_more .title h2 {}
-.mainPage .mainPage_wrapper .s2 .shop .title_more .title .list {}
-.mainPage .mainPage_wrapper .s2 .shop .title_more .title .list li {}
-.mainPage .mainPage_wrapper .s2 .shop .title_more .title .list li a {}
-.mainPage .mainPage_wrapper .s2 .shop .title_more .title .list li a span {}
-.mainPage .mainPage_wrapper .s2 .shop .title_more .more {}
-.mainPage .mainPage_wrapper .s2 .shop .title_more .more a {}
 .mainPage .mainPage_wrapper .s2 .shop .perfume {
     display: flex;
     justify-content: space-between;
@@ -123,7 +141,6 @@
     margin-right: 20px;
     display: inline-block;
 }
-.mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .photo {}
 .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .photo img {width: 100%;}
 .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt {
     position: absolute;
@@ -181,7 +198,6 @@
 .mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product:nth-child(1), .mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product:nth-child(2) {
     margin-bottom: 18px;
 }
-.mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product .photo {}
 .mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product .photo img {width: 100%;}
 .mainPage .mainPage_wrapper .s2 .shop .perfume .desktop_sub .sub_product .shop_txt {
     position: absolute; top: 0; left: 0;
@@ -224,81 +240,36 @@
 }
 /* sub tablet */
 .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub {display: none;}
-.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper {}
-.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product {}
-.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo {}
-.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo img {}
-.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo .shop_txt {}
-.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo .shop_txt .ex {}
-.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo .shop_txt .title_price {}
-.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo .shop_txt .title_price h3 {}
-.mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .swiper-wrapper .sub_product .photo .shop_txt .title_price .price {}
 /* ====================== 3page store ==================== */
-.mainPage .mainPage_wrapper .s3 {}
 .mainPage .mainPage_wrapper .s3 .store {margin : 70px auto;}
 .mainPage .mainPage_wrapper .s3 .store .title_more {
     width: calc(100% - 240px);
     margin: 0 auto;
 }
-.mainPage .mainPage_wrapper .s3 .store .title_more .title {}
-.mainPage .mainPage_wrapper .s3 .store .title_more .title h2 {}
-.mainPage .mainPage_wrapper .s3 .store .title_more .title .list {}
-.mainPage .mainPage_wrapper .s3 .store .title_more .title .list li {}
-.mainPage .mainPage_wrapper .s3 .store .title_more .title .list li a {}
-.mainPage .mainPage_wrapper .s3 .store .title_more .title .list li a span {}
-.mainPage .mainPage_wrapper .s3 .store .title_more .more {}
-.mainPage .mainPage_wrapper .s3 .store .title_more .more a {}
 .mainPage .mainPage_wrapper .s3 .store .mapo {margin-top: 40px;}
-.mainPage .mainPage_wrapper .s3 .store .mapo .store_list {}
-.mainPage .mainPage_wrapper .s3 .store .mapo .store_list h3 {}
-.mainPage .mainPage_wrapper .s3 .store .mapo .store_list p {}
-.mainPage .mainPage_wrapper .s3 .store .mapo .store_list .place {}
-.mainPage .mainPage_wrapper .s3 .store .mapo .store_list .time {}
 .mainPage .mainPage_wrapper .s3 .store .mapo .img_list {margin: 40px 0 0;}
-.mainPage .mainPage_wrapper .s3 .store .mapo .img_list .swiper-wrapper {}
-.mainPage .mainPage_wrapper .s3 .store .mapo .img_list .swiper-wrapper .mapo_img {}
 .mainPage .mainPage_wrapper .s3 .store .mapo .img_list .swiper-wrapper .mapo_img img {width: 100%;}
 /* ====================== 4page cafe ==================== */
-.mainPage .mainPage_wrapper .s4 {}
 .mainPage .mainPage_wrapper .s4 .cafe {margin: 50px 0;}
 .mainPage .mainPage_wrapper .s4 .cafe .title_more {
     width: calc(100% - 240px);
     margin: 0 auto;
 }
-.mainPage .mainPage_wrapper .s4 .cafe .title_more .title {}
-.mainPage .mainPage_wrapper .s4 .cafe .title_more .title h2 {}
-.mainPage .mainPage_wrapper .s4 .cafe .title_more .title .list {}
-.mainPage .mainPage_wrapper .s4 .cafe .title_more .title .list li {}
-.mainPage .mainPage_wrapper .s4 .cafe .title_more .title .list li a {}
-.mainPage .mainPage_wrapper .s4 .cafe .title_more .title .list li a span {}
 .mainPage .mainPage_wrapper .s4 .cafe .cafe_txt {
     font-size: 1.125rem;
     margin: 20px 120px 40px;
     font-family: 'YESMyoungjo-Regular';
 }
-.mainPage .swiper-wrapper .s4 .cafe .title_more .more {}
-.mainPage .swiper-wrapper .s4 .cafe .title_more .more a {}
-.mainPage .swiper-wrapper .s4 .cafe .seogyo {}
-.mainPage .swiper-wrapper .s4 .cafe .seogyo .cafe_list {}
-.mainPage .swiper-wrapper .s4 .cafe .seogyo .cafe_list h3 {}
-.mainPage .swiper-wrapper .s4 .cafe .seogyo .cafe_list p {}
-.mainPage .swiper-wrapper .s4 .cafe .seogyo .cafe_list .place {}
-.mainPage .swiper-wrapper .s4 .cafe .seogyo .cafe_list .time {}
 .mainPage .swiper-wrapper .s4 .cafe .seogyo .img_list {
     margin-top: 40px;
 }
-.mainPage .swiper-wrapper .s4 .cafe .seogyo .img_list .seogyo_img {}
 .mainPage .swiper-wrapper .s4 .cafe .seogyo .img_list .seogyo_img img {width: 100%;}
 /* ====================== 5page event ==================== */
-.mainPage .swiper-wrapper .s5 {}
 .mainPage .swiper-wrapper .s5 .event {
     width: calc(100% - 240px);
     margin: 50px auto;
     position: relative;
 }
-.mainPage .swiper-wrapper .s5 .event .title_more {}
-.mainPage .swiper-wrapper .s5 .event .title_more .title {}
-.mainPage .swiper-wrapper .s5 .event .title_more .title h2 {}
 .mainPage .swiper-wrapper .s5 .event .event_list {
     display: flex;
     justify-content: space-between;
@@ -352,10 +323,6 @@
     opacity: 0.7;
 }
 /* ====================== 개별 bn ===================== */
-.mainPage .swiper-wrapper .s5 .event .event_list .event1 {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_title {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_title h3 {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_title p {}
 .mainPage .swiper-wrapper .s5 .event .event_list .event1 .bn_eventin {
     position: relative;
 }
@@ -382,29 +349,13 @@
     font-size: 0.875rem;
     line-height: 1.5;
 }
-.mainPage .swiper-wrapper .s5 .event .event_list .event2 {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event2 .bn_title {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event2 .bn_title h3 {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event2 .bn_title p {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event2 .bn_eventin {}
 .mainPage .swiper-wrapper .s5 .event .event_list .event2 .bn_eventin img {width: 100%}/*  */
-.mainPage .swiper-wrapper .s5 .event .event_list .event3 {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event3 .a {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event3 .bn_title {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event3 .bn_title h3 {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event3 .bn_title p {}
-.mainPage .swiper-wrapper .s5 .event .event_list .event3 .bn_eventin {}
 .mainPage .swiper-wrapper .s5 .event .event_list .event3 .bn_eventin img {width: 100%}/*  */
-.mainPage .swiper-wrapper .s5 .event .event_list .event3 .a {}
 /* ======================= page6 picture ======================== */
-.mainPage .swiper-wrapper .s6 {}
 .mainPage .swiper-wrapper .s6 .picture {
     width: calc(100% - 240px);
     margin: 45px auto;
 }
-.mainPage .swiper-wrapper .s6 .picture .title_more {}
-.mainPage .swiper-wrapper .s6 .picture .title_more .title {}
-.mainPage .swiper-wrapper .s6 .picture .title_more .title h2 {}
 .mainPage .swiper-wrapper .s6 .picture .container {
     display: flex;
 }
@@ -412,8 +363,6 @@
 .mainPage .swiper-wrapper .s6 .picture .container .basic img {width: 100%;}
 /* ============== swiper picture ============= */
 .mainPage .swiper-wrapper .s6 .picture .container .pic_list {width: 80%;}
-.mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper {}
-.mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide {}
 .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont {transition: all 0.2s;}
 .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont:hover {opacity: 0.7;}
 .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont img {width: 100%;}
@@ -434,17 +383,11 @@
     text-align: right;
 }
 /* ======================= journal ======================== */
-.mainPage .swiper-wrapper .s7 {}
-.mainPage .swiper-wrapper .s7 {}
-.mainPage .swiper-wrapper .s7 .journal_footer {}
 .mainPage .swiper-wrapper .s7 .journal_footer .title_more {
     margin: 45px 120px 25px;
 }
-.mainPage .swiper-wrapper .s7 .journal_footer .title_more .title {}
-.mainPage .swiper-wrapper .s7 .journal_footer .title_more .title h2 {}
 /* =========== swiper journal ========== */
 .mainPage .swiper-wrapper .s7 .journal_footer .container {width: calc(100% - 240px);}
-.mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper {}
 .mainPage .swiper-wrapper .s7 .journal_footer .container .swiper-wrapper .swiper-slide {
     height: 100%;
 }
