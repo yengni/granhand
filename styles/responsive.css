@@ -281,9 +281,6 @@
     .mainPage .mainPage_wrapper .s6 .picture .container .swiper-button-next {
         right: 10px;
     }
-    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_story {
-        font-size: 0.75rem;
-    }
 }
 @media screen and (max-width: 700px){
     .mainPage .mainPage_wrapper .mainPage_slide .contents .title_more .title {position: relative;
