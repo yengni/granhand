@@ -32,10 +32,8 @@ header .right {
     width: 8%;
     margin-right: 10px;
 }
-header .right a {}
 header .right a img {width: 100%;}
 .mainPage {margin-top: 60px;}
-.mainPage .swiper-wrapper {}
 .mainPage .swiper-wrapper .s1 {
     background: url(../img/mb_bg.png) no-repeat;
     background-size: cover;

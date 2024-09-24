@@ -16,8 +16,6 @@
         width: 821px;
         margin-right: 100px;
     }
-    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .photo {}
-    .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .photo img {}
     .mainPage .mainPage_wrapper .s2 .shop .perfume .main_product .shop_txt {
         position: relative;
         background-color: transparent;
@@ -64,9 +62,7 @@
     }
     .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont {
         width: 100%;
-    }
-    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper {}
-    .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product {}            
+    }          
     .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a {
     }            
     .mainPage .mainPage_wrapper .s2 .shop .perfume .tablet_sub .sub_swiper_cont .swiper-wrapper .sub_product a .photo img {width: 100%;}
@@ -167,7 +163,6 @@
     .mainPage .swiper-wrapper .s5 .event .event_list .swiper-wrapper .bn a .bn_eventin img {
         width: 50%;
     }
-    .mainPage .swiper-wrapper .s6 .picture .container .basic img {}
     .mainPage .swiper-wrapper .s5 .event {
         width: calc(100% - 80px);
         margin: 30px auto;
@@ -195,7 +190,6 @@
     header .right {
         width: 12%;
     }
-    header .right a {}
     .mainPage .swiper-wrapper .s1 .mainVisual video {
         width: 180%;
     }
@@ -250,7 +244,6 @@
         margin-top: 15px;
     }
     .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .place {margin-left: 20px; margin-right: 10px;}
-    .mainPage .mainPage_wrapper .mainPage_slide .contents .container .list .time {}
     .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont:first-child .pic_txt {
         margin-bottom: 50px;
     }
