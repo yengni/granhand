@@ -399,9 +399,6 @@
     .mainPage .swiper-wrapper .s6 .picture .container .pic_list > .swiper-wrapper .pic_slide .pic_cont .pic_txt p {
         font-size: 0.75rem;
     }
-    .mainPage .swiper-wrapper .s7 .journal_footer {
-        overflow: visible;
-    }
     .mainPage .swiper-wrapper .s7 .journal_footer footer {
         flex-flow: column-reverse;
         padding: 20px 20px;
@@ -413,12 +410,16 @@
         flex-flow: column-reverse;
         margin-right: 0;
     }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_story {
+        font-size: 0.75rem;
+        
+    }
     .mainPage .swiper-wrapper .s7 .journal_footer footer .f_right .f_menu {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         width: 80%;
     }
     .mainPage .swiper-wrapper .s7 .journal_footer footer .f_txt {
-        margin-left: 0; margin-top: 15px;
+        margin-left: 0; margin-top: 0px;
     }
 }
 @media screen and (max-width: 500px){
@@ -467,6 +468,9 @@
     }
     .mainPage .swiper-wrapper .s5 .event .event_list .bn .bn_title p {
         font-size: 1rem;
+    }
+    .mainPage .swiper-wrapper .s7 .journal_footer footer {
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 380px){
